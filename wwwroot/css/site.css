@@ -18,10 +18,12 @@ html {
 }
 
 body {
-    margin:0;
+    margin: 0;
     height: 100vh;
-    background-color: #fff;
-    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
 
 header {
@@ -31,6 +33,7 @@ header {
 nav {
     height: 100%;
     margin: 0 !important;
+    background-color: transparent;
 }
 
 .main {
@@ -48,7 +51,7 @@ main {
 /*nav style*/
 
 nav a {
-    color: #1e0235 !important;
+    color: #fff !important;
     font-weight: bold;
     font-size: 1.3vw;
 }
@@ -68,35 +71,56 @@ nav a:hover {
     border: 1px solid transparent;
     border-radius: 10px;
     font-weight: bold;
-    margin-left: 1%;
+    margin-left: 2%;
     padding: 3%;
     font-size: 1.3vw;
 }
 
+.buttons a {
+    text-decoration: none;
+}
+
 .sign-up {
     background-color: #fa5090;
-    color: #1e0235;
+}
+
+.sign-up a {
+     color: #1e0235;
 }
 
 .sign-up:hover {
     background-color: #1e0235;
-    color: #fa5090;
+}
+
+.sign-up:hover a {
+    color: #fa5090; 
 }
 
 .sign-in {
     background-color: transparent;
-    color: #1e0235;
+}
+
+.sign-in a { 
+    color: #fff;
 }
 
 .sign-in:hover {
     background-color: #1e0235;
-    color: #fff;
+}
+
+.sign-in:hover a {
+    color: #fa5090;
 }
 /*footer*/
 footer {
-    background-color: #1e0235;
+    background-color: transparent;
     height: 10%;
     padding: 10px 5%;
     color: #fff !important;
     border: 0 !important;
+}
+
+.footer a  {
+    text-decoration: none;
+    color: #fff;
 }

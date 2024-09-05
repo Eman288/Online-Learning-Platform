@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Online Learning Platform.bundle.scp.css"
     },
     {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\Sign.css",
+      "PackagePath": "staticwebassets\\css\\Sign.css"
+    },
+    {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },

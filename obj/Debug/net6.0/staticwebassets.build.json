@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "as9jR24pk1rS1Btj28fNNnVC+PpAcukJovrLwzly8Q8=",
+  "Hash": "9KzQyFpsU/JEFibEFC696sR/V5A+iWEss2xryLU+bWk=",
   "Source": "Online Learning Platform",
   "BasePath": "_content/Online Learning Platform",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
+      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\Sign.css",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "css/Sign.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Sign.css"
     },
     {
       "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\site.css",

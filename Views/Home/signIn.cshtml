@@ -2,35 +2,60 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Sign In";
 }
 
+<head>
+    <style>
+        header, footer {
+            opacity: 0;
+        }
 
-<form>
-     
-    <div>
-        <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Enter Your Email"/>
+        main {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+            main::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1; 
+                filter: drop-shadow(2px 4px 6px black) blur(1px);
+            }
+    </style>
+</head>
+<main>
+<div class="sign">
+    <form class="sign-in-form">
+
+        <div class="form-content">
+            <div class="labels">
+                <label for="email">Email</label>
+                <label for="pass">Password</label>
+                <label for="confpass">Configure Password</label>
+            </div>
+
+            <div class="inputs">
+                <input id="email" name="email" type="email" placeholder="Enter Your Email" />
+                <input id="pass" name="pass" type="password" placeholder="Enter Your Password" />
+                <input id="confpass" name="confpass" type="password" placeholder="Enter Your Password again" />
+            </div>
         </div>
 
-        <div>
-            <label for="pass">Password</label>
-            <input id="pass" name="pass" type="password" placeholder="Enter Your Password" />
+        <div class="sign-in-buttons">
+            <button type="submit">Sign In</button>
+            <div>
+                <p>Don't have an account? join us!</p>
+                <a asp-area="" asp-controller="Home" asp-action="Index">Join Us!</a>
+            </div>
         </div>
 
-        <div>
-            <label for="confpass">Configure Password</label>
-            <input id="confpass" name="confpass" type="password" placeholder="Enter Your Password again" />
-        </div>
-    </div>
 
-    <div class="sign-in-buttons">
-        <button type="submit">Sign In</button> 
-        <div>
-            <p>Don't have an account? join us!</p>
-            <a asp-area="" asp-controller="Home" asp-action="Index">Join Us!</a>
-        </div>
-    </div>
-
-
-</form>
+    </form>
+</div>
+</main>

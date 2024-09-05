@@ -1,1 +1,89 @@
-﻿
+﻿.sign {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 70%;
+    justify-content: center;
+    border: 3px solid #fa5090;
+    border-radius: 10px;
+    background-color: #432b3d63;
+    position: relative;
+    z-index: 1;
+}
+
+.sign-in-form {
+    height: 80%;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-content {
+    display: flex;
+    color: #fff;
+    height: 60%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.labels {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.labels labels {
+    font-size: 1.5vw;
+} 
+
+.inputs {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+inputs {
+    outline: none;
+}
+
+.sign-in-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign-in-buttons button {
+    width: 40%;
+    background-color: #fa5090;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    color: #1e0235;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.sign-in-buttons button:hover {
+    background-color: #1e0235;
+    color: #fa5090;
+}
+
+.sign-in-buttons div {
+    width: 40%;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    font-size: 1vw;
+}
+
+.sign-in-buttons div a {
+    text-decoration: none;
+    color: #fa5090;
+}
