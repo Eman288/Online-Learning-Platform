@@ -1,0 +1,52 @@
+﻿.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-image: url(../img/home.jpg);
+}
+
+
+
+/*home-text*/
+.home-text {
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-text h1 {
+    color: #fff;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.home-text p {
+        color: #aa84b1;
+    font-size: 1vw;
+    max-width: 60%;
+}
+
+.home-text button {
+    background-color: #fa5090;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #1e0235;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.home-text button:hover {
+    background-color: #1e0235;
+    color: #fa5090;
+}

@@ -1,3 +1,7 @@
+* {
+    transition: all .5s;
+}
+
 html {
   font-size: 14px;
 }
@@ -14,5 +18,85 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin:0;
+    height: 100vh;
+    background-color: #fff;
+    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+header {
+    height: 10%;
+}
+
+nav {
+    height: 100%;
+    margin: 0 !important;
+}
+
+.main {
+    height: 80%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+main {
+    height: 100%;
+}
+
+
+
+/*nav style*/
+
+nav a {
+    color: #1e0235 !important;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+nav a:hover {
+    color: #fa5090 !important;
+}
+
+.buttons {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buttons button {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 1%;
+    padding: 3%;
+    font-size: 1.3vw;
+}
+
+.sign-up {
+    background-color: #fa5090;
+    color: #1e0235;
+}
+
+.sign-up:hover {
+    background-color: #1e0235;
+    color: #fa5090;
+}
+
+.sign-in {
+    background-color: transparent;
+    color: #1e0235;
+}
+
+.sign-in:hover {
+    background-color: #1e0235;
+    color: #fff;
+}
+/*footer*/
+footer {
+    background-color: #1e0235;
+    height: 10%;
+    padding: 10px 5%;
+    color: #fff !important;
+    border: 0 !important;
 }

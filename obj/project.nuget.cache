@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "gWLERYrHTpP+kArJS1VVl7Kt/Br4cI0nSculfuitcM00Ci09FvJ74rdYyY9W334gkjv9LzN4AUHiY/rRU4qmxg==",
+  "success": true,
+  "projectFilePath": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\Online Learning Platform.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ALTHOURAYA\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\ALTHOURAYA\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\ALTHOURAYA\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\ALTHOURAYA\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}

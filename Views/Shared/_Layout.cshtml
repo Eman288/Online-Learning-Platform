@@ -3,16 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Online_Learning_Platform</title>
+    <title>@ViewData["Title"] - LearnNest</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Sign.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Online_Learning_Platform.styles.css" asp-append-version="true" />
+    <link>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Online_Learning_Platform</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LearnNest</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,18 +30,29 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="buttons">
+                    <button class="sign-in" asp-controller="Home" asp-action="signIn">
+                        Sign In
+                    </button>
+
+                    <button class="sign-up" asp-controller="Home" asp-action="signUp">
+                        Sign Up
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="main">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer">
         <div class="container">
             &copy; 2024 - Online_Learning_Platform - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <a href="https://www.freepik.com/free-vector/female-student-listening-webinar-online_9175118.htm#fromView=search&page=1&position=34&uuid=9478143e-93f2-43fa-9a51-f89d49459d70">Image by pch.vector on Freepik</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -1,0 +1,31 @@
+E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\appsettings.Development.json
+E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\appsettings.json
+E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\Online Learning Platform.staticwebassets.runtime.json
+E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\Online Learning Platform.exe
+E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\Online Learning Platform.deps.json
+E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\Online Learning Platform.runtimeconfig.json
+E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\Online Learning Platform.dll
+E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\Online Learning Platform.pdb
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.GeneratedMSBuildEditorConfig.editorconfig
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.AssemblyInfoInputs.cache
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.AssemblyInfo.cs
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.csproj.CoreCompileInputs.cache
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.MvcApplicationPartsAssemblyInfo.cache
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.RazorAssemblyInfo.cache
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.RazorAssemblyInfo.cs
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.sourcelink.json
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\staticwebassets.build.json
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\staticwebassets.development.json
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\staticwebassets\msbuild.Online Learning Platform.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\staticwebassets\msbuild.build.Online Learning Platform.props
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Online Learning Platform.props
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Online Learning Platform.props
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\staticwebassets.pack.json
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\scopedcss\bundle\Online Learning Platform.styles.css
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\scopedcss\projectbundle\Online Learning Platform.bundle.scp.css
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.dll
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\refint\Online Learning Platform.dll
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.pdb
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.genruntimeconfig.cache
+E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\ref\Online Learning Platform.dll
