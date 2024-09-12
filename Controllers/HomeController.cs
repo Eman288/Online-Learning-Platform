@@ -28,15 +28,5 @@ namespace Online_Learning_Platform.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        public IActionResult signIn()
-        {
-            return View();
-        }
-
-        public IActionResult signUp()
-        {
-            return View();
-        }
     }
 }

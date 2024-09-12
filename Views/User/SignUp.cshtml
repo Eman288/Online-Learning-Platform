@@ -1,0 +1,93 @@
+﻿@model Online_Learning_Platform.Models.User
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    header, footer {
+        display: none !important;
+    }
+
+    .main {
+        height: 100%;
+    }
+</style>
+
+<div class="SignUp-block">
+
+    <h1>LearnNest!</h1>
+
+    <form asp-controller="User" asp-action="SignUp" method="post" class="signUp-form" enctype="multipart/form-data">
+        <div>
+            <label for="id">National Id</label>
+            <input class="input" id="id" type="text" required placeholder="National Id" asp-for="UserId" />
+            <span asp-validation-for="UserId" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label for="name">Name</label>
+            <input class="input" id="name" type="text" required placeholder="Name" asp-for="UserName" />
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input class="input" id="email" type="email" required placeholder="Email" asp-for="UserEmail" />
+            <span asp-validation-for="UserEmail" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label for="pass">Password</label>
+            <input class="input" id="pass" type="password" required placeholder="Password" asp-for="UserPassword" />
+            <span asp-validation-for="UserPassword" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label for="confpass">Confirm Password</label>
+            <input class="input" id="confpass" type="password" name="confpass" placeholder="Confirm Password" />
+        </div>
+
+        <div>
+            <label for="img">Image</label>
+            <input class="input" id="img" type="file" accept="image/*" />
+        </div>
+
+        <div>
+            <label for="birthday">Birthday</label>
+            <input class="input" id="birthday" type="date" required asp-for="UserBirthday" />
+            <span asp-validation-for="UserBirthday" class="text-danger"></span>
+        </div>
+
+        <div class="type">
+            <div>
+                <label for="user">User</label>
+                <input class="input" id="user" type="radio" value="user" name="Type" required/>
+            </div>
+
+            <div>
+                <label for="courseProvider">Course Provider</label>
+                <input class="input" id="courseProvider" type="radio" value="courseProvider" name="Type" required/>
+            </div>
+        </div>
+
+        <div class="SignUp-buttons">
+            <button type="submit">SignUp</button>
+        </div>
+    </form>
+
+</div>
+
+<script>
+    const inputs = document.querySelectorAll('input');
+
+    inputs.forEach(input => {
+        input.addEventListener('input', function () {
+            if (this.value.length > 0) {
+                this.classList.add('inputHasContent');
+            } else {
+                this.classList.remove('inputHasContent');
+            }
+        });
+    });
+</script>

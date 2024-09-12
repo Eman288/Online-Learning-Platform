@@ -1,10 +1,16 @@
-﻿.sign {
+﻿:root {
+    --main-color: #1e0235;
+    --second-main-color: #fa5090;
+    --font-color: #fff;
+}
+
+.sign {
     display: flex;
     height: 100%;
     align-items: center;
     width: 70%;
     justify-content: center;
-    border: 3px solid #fa5090;
+    border: 3px solid var(--second-main-color);
     border-radius: 10px;
     background-color: #432b3d63;
     position: relative;
@@ -22,7 +28,7 @@
 
 .form-content {
     display: flex;
-    color: #fff;
+    color: var(--font-color);
     height: 60%;
     width: 100%;
     align-items: center;
@@ -61,29 +67,120 @@ inputs {
 
 .sign-in-buttons button {
     width: 40%;
-    background-color: #fa5090;
+    background-color: var(--second-main-color);
     border: 1px solid transparent;
     padding: 10px;
     border-radius: 10px;
-    color: #1e0235;
+    color: var(--main-color);
     font-weight: bold;
     font-size: 1.5vw;
 }
 
 .sign-in-buttons button:hover {
-    background-color: #1e0235;
-    color: #fa5090;
+    background-color: var(--main-color);
+    color: var(--second-main-color);
 }
 
 .sign-in-buttons div {
     width: 40%;
     display: flex;
-    color: #fff;
+    color: var(--font-color);
     flex-direction: column;
     font-size: 1vw;
 }
 
 .sign-in-buttons div a {
     text-decoration: none;
-    color: #fa5090;
+    color: var(--second-main-color);
+}
+
+/*Sign Up*/
+
+.SignUp-block .user-img {
+    background-image: url(../img/user.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    filter: invert(1);
+    border: 1px solid transparent;
+}
+
+.signUp-form {
+    height: 100%;
+    width: 55%;
+    display: grid;
+    justify-items: center;
+    align-content: space-evenly;
+    padding: 1%;
+}
+
+.signUp-form div {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    color: var(--font-color);
+}
+
+.SignUp-block {
+    height: 100%;
+    display: flex;
+    gap: 5%;
+}
+
+.SignUp-block h1 {
+    font-size: 4vw;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-right: 5px solid var(--font-color);
+    color: var(--main-color);
+    background-color: var(--second-main-color);
+    filter: opacity(0.5);
+}
+
+.signUp-form button {
+    background-color: var(--second-main-color);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.signUp-form button:hover {
+    background-color: #b14181;
+    color: var(--main-color);
+}
+
+.SignUp-block .type {
+    flex-direction: row;
+    display: flex;
+}
+
+.SignUp-block .type div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.SignUp-block input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--second-main-color);
+    /* border-radius: 5px; */
+    /* opacity: .7; */
+    color: #635369;
+}
+
+.input {
+    background-color: transparent;
+}
+
+.inputHasContent {
+    background-color: #E8F0FE;
+    color: black !important;
 }

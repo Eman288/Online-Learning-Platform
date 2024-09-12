@@ -1,4 +1,5 @@
-﻿@*
+﻿@model Online_Learning_Platform.Models.User;
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
@@ -31,20 +32,29 @@
 </head>
 <main>
 <div class="sign">
-    <form class="sign-in-form">
+    <form class="sign-in-form" asp-controller="User" asp-action="SignIn" method="post" enctype="multipart/form-data">
 
         <div class="form-content">
             <div class="labels">
                 <label for="email">Email</label>
                 <label for="pass">Password</label>
-                <label for="confpass">Configure Password</label>
             </div>
 
             <div class="inputs">
-                <input id="email" name="email" type="email" placeholder="Enter Your Email" />
-                <input id="pass" name="pass" type="password" placeholder="Enter Your Password" />
-                <input id="confpass" name="confpass" type="password" placeholder="Enter Your Password again" />
-            </div>
+                <input id="email" type="email" placeholder="Enter Your Email" asp-for="UserEmail" required/>
+                <span asp-validation-for="UserEmail" class="text-danger"></span>
+                <input id="pass" type="password" placeholder="Enter Your Password" asp-for="UserPassword" required/>
+                <span asp-validation-for="UserPassword" class="text-danger"></span>
+                    <div>
+                        <label for="user">User</label>
+                        <input class="input" id="user" type="radio" value="user" name="Type" required />
+                    </div>
+
+                    <div>
+                        <label for="courseProvider">Course Provider</label>
+                        <input class="input" id="courseProvider" type="radio" value="courseProvider" name="Type" required />
+                    </div>
+                </div>
         </div>
 
         <div class="sign-in-buttons">

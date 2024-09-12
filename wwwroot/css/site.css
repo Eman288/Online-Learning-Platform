@@ -1,4 +1,11 @@
-* {
+:root {
+    --main-color: #1e0235;
+    --second-main-color: #fa5090;
+    --font-color: #fff;
+}
+
+
+*{
     transition: all .5s;
 }
 
@@ -51,13 +58,13 @@ main {
 /*nav style*/
 
 nav a {
-    color: #fff !important;
+    color: var(--font-color) !important;
     font-weight: bold;
     font-size: 1.3vw;
 }
 
 nav a:hover {
-    color: #fa5090 !important;
+    color: var(--second-main-color) !important;
 }
 
 .buttons {
@@ -81,19 +88,19 @@ nav a:hover {
 }
 
 .sign-up {
-    background-color: #fa5090;
+    background-color: var(--second-main-color);
 }
 
 .sign-up a {
-     color: #1e0235;
+     color: var(--main-color);
 }
 
 .sign-up:hover {
-    background-color: #1e0235;
+    background-color: var(--main-color);
 }
 
 .sign-up:hover a {
-    color: #fa5090; 
+    color: var(--second-main-color); 
 }
 
 .sign-in {
@@ -101,26 +108,26 @@ nav a:hover {
 }
 
 .sign-in a { 
-    color: #fff;
+    color: var(--font-color);
 }
 
 .sign-in:hover {
-    background-color: #1e0235;
+    background-color: var(--main-color);
 }
 
 .sign-in:hover a {
-    color: #fa5090;
+    color: var(--second-main-color);
 }
 /*footer*/
 footer {
     background-color: transparent;
     height: 10%;
     padding: 10px 5%;
-    color: #fff !important;
+    color: var(--font-color) !important;
     border: 0 !important;
 }
 
 .footer a  {
     text-decoration: none;
-    color: #fff;
+    color: var(--font-color);
 }

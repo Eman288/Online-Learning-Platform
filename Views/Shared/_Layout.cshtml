@@ -32,13 +32,24 @@
                 </div>
 
                 <div class="buttons">
-                    <button class="sign-in">
-                        <a asp-area="" asp-controller="Home" asp-action="signIn">Sign In</a>
-                    </button>
+                    @if (ViewContext.HttpContext.Session.GetString("Id") == null || ViewContext.HttpContext.Session.GetString("Type") == null)
+                    {
+                        <button class="sign-in">
+                            <a asp-area="" asp-controller="User" asp-action="SignIn">Sign In</a>
+                        </button>
 
-                    <button class="sign-up">
-                        <a asp-area="" asp-controller="Home" asp-action="signUp">Sign Up</a>
-                    </button>
+                        <button class="sign-up">
+                            <a asp-area="" asp-controller="User" asp-action="SignUp">Sign Up</a>
+                        </button>
+                    }
+                    else
+                    {
+                        <button class="sign-in">
+                            <a asp-area="" asp-controller="User" asp-action="Profile">
+                                <img src="../wwwroot/img/user.png" alt="profile" class="profile"/>
+                            </a>
+                        </button>
+                    }
                 </div>
             </div>
         </nav>

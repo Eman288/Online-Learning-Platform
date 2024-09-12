@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\home.png",
       "PackagePath": "staticwebassets\\img\\home.png"
+    },
+    {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
     },
     {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\js\\site.js",
