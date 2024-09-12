@@ -16,6 +16,7 @@ namespace Online_Learning_Platform.Migrations
                     CourseProviderId = table.Column<string>(type: "varchar(50)", nullable: false),
                     CourseProviderName = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
                     CourseProviderImage = table.Column<string>(type: "varchar(250)", nullable: false),
+                    CourseProviderDescription = table.Column<string>(type: "varchar(250)", nullable: false),
                     CourseProviderEmail = table.Column<string>(type: "varchar(50)", nullable: false),
                     CourseProviderPassword = table.Column<string>(type: "varchar(150)", nullable: false),
                     CourseProviderBirthday = table.Column<DateTime>(type: "date", nullable: false)
@@ -31,7 +32,8 @@ namespace Online_Learning_Platform.Migrations
                 {
                     UserId = table.Column<string>(type: "varchar(50)", nullable: false),
                     UserName = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
-                    UserImage = table.Column<string>(type: "varchar(250)", nullable: false),
+                    UserImage = table.Column<string>(type: "varchar(250)", nullable: true),
+                    UserDescription = table.Column<string>(type: "varchar(250)", nullable: false),
                     UserEmail = table.Column<string>(type: "varchar(50)", nullable: false),
                     UserPassword = table.Column<string>(type: "varchar(150)", nullable: false),
                     UserBirthday = table.Column<DateTime>(type: "date", nullable: false)

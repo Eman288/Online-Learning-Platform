@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\edit.png",
+      "PackagePath": "staticwebassets\\img\\edit.png"
+    },
+    {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\home.jpg",
       "PackagePath": "staticwebassets\\img\\home.jpg"
     },

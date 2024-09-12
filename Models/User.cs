@@ -17,8 +17,12 @@ namespace Online_Learning_Platform.Models
         [Column(TypeName = "varchar(250)")]
         public string? UserImage { get; set; } = null;
 
+        [Column(TypeName = "varchar(250)")]
+        public string UserDescription { get; set; } = string.Empty;
+
         [Column(TypeName = "varchar(50)")]
         [Required]
+
         public string UserEmail { get; set; } = string.Empty;
 
         [Column(TypeName = "varchar(150)")]

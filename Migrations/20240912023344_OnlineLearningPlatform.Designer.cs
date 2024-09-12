@@ -12,7 +12,7 @@ using Online_Learning_Platform.Data;
 namespace Online_Learning_Platform.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240907090948_OnlineLearningPlatform")]
+    [Migration("20240912023344_OnlineLearningPlatform")]
     partial class OnlineLearningPlatform
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,6 +67,10 @@ namespace Online_Learning_Platform.Migrations
 
                     b.Property<DateTime>("CourseProviderBirthday")
                         .HasColumnType("date");
+
+                    b.Property<string>("CourseProviderDescription")
+                        .IsRequired()
+                        .HasColumnType("varchar(250)");
 
                     b.Property<string>("CourseProviderEmail")
                         .IsRequired()
@@ -139,12 +143,15 @@ namespace Online_Learning_Platform.Migrations
                     b.Property<DateTime>("UserBirthday")
                         .HasColumnType("date");
 
+                    b.Property<string>("UserDescription")
+                        .IsRequired()
+                        .HasColumnType("varchar(250)");
+
                     b.Property<string>("UserEmail")
                         .IsRequired()
                         .HasColumnType("varchar(50)");
 
                     b.Property<string>("UserImage")
-                        .IsRequired()
                         .HasColumnType("varchar(250)");
 
                     b.Property<string>("UserName")

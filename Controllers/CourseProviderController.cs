@@ -30,9 +30,21 @@ namespace Online_Learning_Platform.Controllers
             else if (HttpContext.Session.GetString("Type") == "courseProvider")
             {
                 //show the course provider profile with the data
-                return View(db.CourseProviders.Where(a => a.CourseProviderId == HttpContext.Session.GetString("Id")));
+                return View(db.CourseProviders.Where(a => a.CourseProviderId == HttpContext.Session.GetString("Id")).FirstOrDefault());
             }
             return RedirectToAction("Index", "Home");
+        }
+
+        [NonAction]
+        public IActionResult SignOut()
+        {
+            //remove session data
+
+            HttpContext.Session.Remove("Id");
+            HttpContext.Session.Remove("Type");
+
+            //redirect the Course Provider to the home page
+            return View("Index", "Home");
         }
     }
 }

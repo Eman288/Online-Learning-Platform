@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NM0wKUezDYAMU/xHUwxX3UUO98HlM/j5GpJIBhzhBOA=",
+  "Hash": "ghEUOX8PokxvGcV6fwmU9DMtyLD1aEr/AVHUEzqI/s0=",
   "Source": "Online Learning Platform",
   "BasePath": "_content/Online Learning Platform",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\edit.png",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "img/edit.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\edit.png"
     },
     {
       "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\home.jpg",

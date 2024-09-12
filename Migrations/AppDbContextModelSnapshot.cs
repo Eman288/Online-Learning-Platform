@@ -66,6 +66,10 @@ namespace Online_Learning_Platform.Migrations
                     b.Property<DateTime>("CourseProviderBirthday")
                         .HasColumnType("date");
 
+                    b.Property<string>("CourseProviderDescription")
+                        .IsRequired()
+                        .HasColumnType("varchar(250)");
+
                     b.Property<string>("CourseProviderEmail")
                         .IsRequired()
                         .HasColumnType("varchar(50)");
@@ -137,12 +141,15 @@ namespace Online_Learning_Platform.Migrations
                     b.Property<DateTime>("UserBirthday")
                         .HasColumnType("date");
 
+                    b.Property<string>("UserDescription")
+                        .IsRequired()
+                        .HasColumnType("varchar(250)");
+
                     b.Property<string>("UserEmail")
                         .IsRequired()
                         .HasColumnType("varchar(50)");
 
                     b.Property<string>("UserImage")
-                        .IsRequired()
                         .HasColumnType("varchar(250)");
 
                     b.Property<string>("UserName")

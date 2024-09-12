@@ -151,6 +151,7 @@ namespace Online_Learning_Platform.Controllers
                         newUser.UserPassword = u.UserPassword;
                         newUser.UserBirthday = u.UserBirthday;
                         newUser.UserImage = "";
+                        newUser.UserDescription = "Hello! My Name is " + newUser.UserName + " and I am Ready to Learn!!";
 
                        Console.WriteLine("data ok");
 
@@ -243,7 +244,7 @@ namespace Online_Learning_Platform.Controllers
             if (HttpContext.Session.GetString("Type") == "user")
             {
                 //show user profile with user data
-                return View(db.Users.Where(a => a.UserId == HttpContext.Session.GetString("Id")));
+                return View(db.Users.Where(a => a.UserId == HttpContext.Session.GetString("Id")).FirstOrDefault());
             }
             else if (HttpContext.Session.GetString("Type") == "courseProvider")
             {
@@ -251,6 +252,18 @@ namespace Online_Learning_Platform.Controllers
                 return RedirectToAction("Profile", "CourseProvider");
             }
             return RedirectToAction("Index", "Home");
+        }
+
+        [NonAction]
+        public IActionResult SignOut()
+        {
+            //remove session data
+
+            HttpContext.Session.Remove("Id");
+            HttpContext.Session.Remove("Type");
+            
+            //redirect the user to the home page
+            return View("Index", "Home");
         }
     }
 }

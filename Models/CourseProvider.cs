@@ -17,6 +17,9 @@ namespace Online_Learning_Platform.Models
         [Column(TypeName = "varchar(250)")]
         public string CourseProviderImage { get; set; } = string.Empty;
 
+        [Column(TypeName = "varchar(250)")]
+        public string CourseProviderDescription { get; set; } = string.Empty;
+
         [Column(TypeName = "varchar(50)")]
         [Required]
         public string CourseProviderEmail { get; set; } = string.Empty;

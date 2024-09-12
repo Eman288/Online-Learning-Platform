@@ -1,7 +1,47 @@
-﻿@*
+﻿@model Online_Learning_Platform.Models.User
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
+<style>
+    header, footer {
+        display: none;
+    }
+    
+    .main {
+        height: 100%;
+    }
 
-this is user profile
+</style>
+
+<div class="profile">
+    <div class="profile-actions">
+        <a href="#">My Dashboard</a>
+        <a href="#">Courses</a>
+        <button asp-controller="User" asp-action="SignOut">Sign Out</button>
+    </div>
+
+    <div class="profile-info">
+        <div class="profile-personal">
+            <a asp-controller="User" asp-action="EditData">
+                <img src="~/img/edit.png"/>
+            </a>
+            <div>
+                <img src="~/img/user.png" alt="error" />
+                <div>
+                    <h3>@Model.UserName</h3>
+                    <p>@Model.UserBirthday</p>
+                    <p><!--Show the number of courses they took-->Courses Finished: 0</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-description">
+             <a asp-controller="User" asp-action="EditDescription">
+                    <img src="~/img/edit.png"/>
+             </a>
+            <h3>Tell Me About Yourself</h3>
+            <p>@Model.UserDescription <!--Add description to user and course provider--></p>
+        </div>
+    </div>
+</div>
