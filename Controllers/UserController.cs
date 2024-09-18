@@ -29,54 +29,28 @@ namespace Online_Learning_Platform.Controllers
         }
 
         [NonAction]
-        public bool UserIdCheck(User u, string type)
+        public bool UserIdCheck(User u)
         {
-            if (type == "user")
+            var testID = db.Users.Where(a => a.UserId == u.UserId).FirstOrDefault();
+            if (testID != null)
             {
-                var testID = db.Users.Where(a => a.UserId == u.UserId).FirstOrDefault();
-                if (testID != null)
-                {
-                    return false;
-                }
-                return true;
+                return false;
             }
-            else
-            {
-                var testID = db.CourseProviders.Where(a => a.CourseProviderId == u.UserId).FirstOrDefault();
-                if (testID != null)
-                {
-                    return false;
-                }
-                return true;
-            }
-
+            return true;
         }
 
 
         //check if the email exist or not
         //if it exist return true, else false
         [NonAction]
-        public bool UserEmailCheck(User u, string type)
+        public bool UserEmailCheck(User u)
         {
-            if (type == "user")
+            var testEmail = db.Users.Where(a => a.UserEmail == u.UserEmail).FirstOrDefault();
+            if (testEmail == null)
             {
-                var testEmail = db.Users.Where(a => a.UserEmail == u.UserEmail).FirstOrDefault();
-                if (testEmail == null)
-                {
-                    return false;
-                }
-                return true;
+                return false;
             }
-            else
-            {
-                var testEmail = db.CourseProviders.Where(a => a.CourseProviderEmail == u.UserEmail).FirstOrDefault();
-                if (testEmail == null)
-                {
-                    return false;
-                }
-                return true;
-            }
-
+            return true;
         }
 
         [NonAction]
@@ -96,11 +70,11 @@ namespace Online_Learning_Platform.Controllers
             return true;
         }
         [NonAction]
-        public bool ConfUser(User u, IFormCollection f, IFormFile i, string type, out int wentWrong)
+        public bool ConfUser(User u, IFormCollection f, IFormFile i, out int wentWrong)
         {
 
             // test id doesn't exist before in the database
-            if (!UserIdCheck(u, type))
+            if (!UserIdCheck(u))
             {
                 wentWrong = 0;
                 return false;
@@ -108,7 +82,7 @@ namespace Online_Learning_Platform.Controllers
 
 
             // test email doesn't exist before in the database
-            if (UserEmailCheck(u, type))
+            if (UserEmailCheck(u))
             {
                 wentWrong = 1;
                 return false;
@@ -160,95 +134,55 @@ namespace Online_Learning_Platform.Controllers
         {
             if (HttpContext.Session.GetString("Id") == null && HttpContext.Session.GetString("Type") == null)
             {
-                if (f["Type"] == "user")
+                int wentWrong;
+                if (ConfUser(u, f, i, out wentWrong))
                 {
-                    int wentWrong;
-                    if (ConfUser(u, f, i, "user", out wentWrong))
-                    {
-                        User newUser = new User();
+                    User newUser = new User();
 
-                        newUser.UserId = u.UserId;
-                        newUser.UserName = u.UserName;
+                    newUser.UserId = u.UserId;
+                    newUser.UserName = u.UserName;
 
-                        //working on
-                        //check that the email is verified for google //gonna be fun to try :)
-                        newUser.UserEmail = u.UserEmail;
-                        newUser.UserPassword = u.UserPassword;
-                        newUser.UserBirthday = u.UserBirthday;
-                        newUser.UserImage = "";
-                        newUser.UserDescription = "Hello! My Name is " + newUser.UserName + " and I am Ready to Learn!!";
-
-                        Console.WriteLine("data ok");
-
-                        db.Users.Add(newUser);
-                        await db.SaveChangesAsync();
-                        Console.WriteLine("data added");
-                    }
-                    else
-                    {
-                        switch (wentWrong)
-                        {
-                            case 0:
-                                ModelState.AddModelError("UserId", "This Id Exist Already, Please Write another one or sign in");
-                                break;
-                            case 1:
-                                ModelState.AddModelError("UserEmail", "This Email is used, try another one or sign in");
-                                break;
-                            case 2:
-                                ModelState.AddModelError("UserPassword", "The Password Must be Between 8-12 char");
-                                break;
-                            case 4:
-                                ModelState.AddModelError("UserPassword", "The Passwords Don't Match");
-                                break;
-                        }
-                        return View(u);
-                    }
-                }
-                else if (f["Type"] == "courseProvider")
-                {
                     //working on
-
-                    int wentWrong;
-                    if (ConfUser(u, f, i, "courseProvider", out wentWrong))
+                    //check that the email is verified for google //gonna be fun to try :)
+                    newUser.UserEmail = u.UserEmail;
+                    newUser.UserPassword = u.UserPassword;
+                    newUser.UserBirthday = u.UserBirthday;
+                    newUser.UserImage = "";
+                    if (f["Type"] == "user")
                     {
-                        CourseProvider newprovider = new CourseProvider();
-
-                        newprovider.CourseProviderId = u.UserId;
-                        newprovider.CourseProviderName = u.UserName;
-
-                        //working on
-                        //check that the email is verified for google //gonna be fun to try :)
-                        newprovider.CourseProviderEmail = u.UserEmail;
-                        newprovider.CourseProviderPassword = u.UserPassword;
-                        newprovider.CourseProviderBirthday = u.UserBirthday;
-                        newprovider.CourseProviderImage = "";
-                        newprovider.CourseProviderDescription = "Hello! My Name is " + newprovider.CourseProviderName + " and I Provide Content!";
-
-                        Console.WriteLine("data ok");
-
-                        db.CourseProviders.Add(newprovider);
-                        await db.SaveChangesAsync();
-                        Console.WriteLine("data added");
+                        newUser.UserDescription = "Hello! My Name is " + newUser.UserName + " and I am Ready to Learn!!";
+                        newUser.UserType = 1;
                     }
                     else
                     {
-                        switch (wentWrong)
-                        {
-                            case 0:
-                                ModelState.AddModelError("UserId", "This Id Exist Already, Please Write another one or sign in");
-                                break;
-                            case 1:
-                                ModelState.AddModelError("UserEmail", "This Email is used, try another one or sign in");
-                                break;
-                            case 2:
-                                ModelState.AddModelError("UserPassword", "The Password Must be Between 8-12 char");
-                                break;
-                            case 4:
-                                ModelState.AddModelError("UserPassword", "The Passwords Don't Match");
-                                break;
-                        }
-                        return View(u);
+                        newUser.UserDescription = "Hello! My Name is " + newUser.UserName + " and I Provide Content!";
+                        newUser.UserType = 2;
                     }
+
+                    Console.WriteLine("data ok");
+
+                    db.Users.Add(newUser);
+                    await db.SaveChangesAsync();
+                    Console.WriteLine("data added");
+                }
+                else
+                {
+                    switch (wentWrong)
+                    {
+                        case 0:
+                            ModelState.AddModelError("UserId", "This Id Exist Already, Please Write another one or sign in");
+                            break;
+                        case 1:
+                            ModelState.AddModelError("UserEmail", "This Email is used, try another one or sign in");
+                            break;
+                        case 2:
+                            ModelState.AddModelError("UserPassword", "The Password Must be Between 8-12 char");
+                            break;
+                        case 4:
+                            ModelState.AddModelError("UserPassword", "The Passwords Don't Match");
+                            break;
+                    }
+                    return View(u);
                 }
 
 
@@ -269,54 +203,41 @@ namespace Online_Learning_Platform.Controllers
         {
             if (HttpContext.Session.GetString("Id") == null && HttpContext.Session.GetString("Type") == null)
             {
-                if (f["Type"] == "user")
+                User user = db.Users.Where(a => a.UserEmail == u.UserEmail).FirstOrDefault();
+                if (user != null)
                 {
-                    User user = db.Users.Where(a => a.UserEmail == u.UserEmail).FirstOrDefault();
-                    if (user != null)
+                    if (user.UserPassword == u.UserPassword)
                     {
-
-                        if (user.UserPassword == u.UserPassword)
+                        if ((user.UserType == 1 && f["Type"] == "user") || (user.UserType == 2 && f["Type"] == "courseProvider"))
                         {
                             HttpContext.Session.SetString("Id", user.UserId);
-                            HttpContext.Session.SetString("Type", "user");
+                            if (f["Type"] == "user")
+                            {
+                                HttpContext.Session.SetString("Type", "user");
+                            }
+                            else
+                            {
+                                HttpContext.Session.SetString("Type", "courseProvider");
+                            }
                             return RedirectToAction("Index", "Home");
                         }
                         else
                         {
-                            ModelState.AddModelError("UserPassword", "The Password is Wrong, Try Again");
+                            ModelState.AddModelError("UserType", "Wrong Type Selection");
                             return View(u);
                         }
+                        
                     }
                     else
                     {
-                        ModelState.AddModelError("UserEmail", "The Email Doesn't Exist, Sign Up");
+                        ModelState.AddModelError("UserPassword", "The Password is Wrong, Try Again");
                         return View(u);
                     }
                 }
                 else
                 {
-                    //working on
-                    CourseProvider? provider = db.CourseProviders.Where(a => a.CourseProviderEmail == u.UserEmail).FirstOrDefault();
-                    if (provider != null)
-                    {
-
-                        if (provider.CourseProviderPassword == u.UserPassword)
-                        {
-                            HttpContext.Session.SetString("Id", provider.CourseProviderId);
-                            HttpContext.Session.SetString("Type", "user");
-                            return RedirectToAction("Index", "Home");
-                        }
-                        else
-                        {
-                            ModelState.AddModelError("UserPassword", "The Password is Wrong, Try Again");
-                            return View(u);
-                        }
-                    }
-                    else
-                    {
-                        ModelState.AddModelError("UserEmail", "The Email Doesn't Exist, Sign Up");
-                        return View(u);
-                    }
+                    ModelState.AddModelError("UserEmail", "The Email Doesn't Exist, Sign Up");
+                    return View(u);
                 }
             }
             return RedirectToAction("Index", "Home");
@@ -330,17 +251,8 @@ namespace Online_Learning_Platform.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            if (HttpContext.Session.GetString("Type") == "user")
-            {
-                //show user profile with user data
-                return View(db.Users.Where(a => a.UserId == HttpContext.Session.GetString("Id")).FirstOrDefault());
-            }
-            else if (HttpContext.Session.GetString("Type") == "courseProvider")
-            {
-                //send the request to the course provider controller
-                return RedirectToAction("Profile", "CourseProvider");
-            }
-            return RedirectToAction("Index", "Home");
+            return View(db.Users.Where(a => a.UserId == HttpContext.Session.GetString("Id")).FirstOrDefault());
+
         }
 
         [HttpGet]
@@ -461,69 +373,69 @@ namespace Online_Learning_Platform.Controllers
 
                 return RedirectToAction("Profile");
             }
-            else
-            {
-                CourseProvider? current = db.CourseProviders.Where(a => a.CourseProviderId == HttpContext.Session.GetString("Id")).FirstOrDefault();
+            //else
+            //{
+            //    CourseProvider? current = db.CourseProviders.Where(a => a.CourseProviderId == HttpContext.Session.GetString("Id")).FirstOrDefault();
 
-                if (current != null)
-                {
-                    // update name
-                    if (u.UserName != null && u.UserName != current.CourseProviderName)
-                    {
-                        current.CourseProviderName = u.UserName;
-                    }
+            //    if (current != null)
+            //    {
+            //        // update name
+            //        if (u.UserName != null && u.UserName != current.CourseProviderName)
+            //        {
+            //            current.CourseProviderName = u.UserName;
+            //        }
 
-                    // update email
-                    if (u.UserEmail != null && u.UserEmail != current.CourseProviderEmail)
-                    {
-                        CourseProvider? newu = db.CourseProviders.Where(a => a.CourseProviderEmail == u.UserEmail).FirstOrDefault();
-                        if (newu == null)
-                        {
-                            current.CourseProviderEmail = u.UserEmail;
-                        }
-                        else
-                        {
-                            ModelState.AddModelError("UserEmail", "This Email Already Exist");
-                            return View(u);
-                        }
-                    }
+            //        // update email
+            //        if (u.UserEmail != null && u.UserEmail != current.CourseProviderEmail)
+            //        {
+            //            CourseProvider? newu = db.CourseProviders.Where(a => a.CourseProviderEmail == u.UserEmail).FirstOrDefault();
+            //            if (newu == null)
+            //            {
+            //                current.CourseProviderEmail = u.UserEmail;
+            //            }
+            //            else
+            //            {
+            //                ModelState.AddModelError("UserEmail", "This Email Already Exist");
+            //                return View(u);
+            //            }
+            //        }
 
-                    // update password
-                    if (u.UserPassword != null && u.UserPassword != current.CourseProviderPassword)
-                    {
-                        int t;
-                        if (!UserPassCheck(u, form["confpass"], out t))
-                        {
-                            if (t == 0)
-                            {
-                                // the length of the password is wrong
-                                ModelState.AddModelError("UserPassword", "The Password Must be Between 8-12 char");
-                            }
-                            else if (t == 1)
-                            {
-                                // the password doesn't come in the right format
-                            }
-                            else
-                            {
-                                // the password confirm doesn't match the password
-                                ModelState.AddModelError("UserPassword", "The Passwords Don't Match");
+            //        // update password
+            //        if (u.UserPassword != null && u.UserPassword != current.CourseProviderPassword)
+            //        {
+            //            int t;
+            //            if (!UserPassCheck(u, form["confpass"], out t))
+            //            {
+            //                if (t == 0)
+            //                {
+            //                    // the length of the password is wrong
+            //                    ModelState.AddModelError("UserPassword", "The Password Must be Between 8-12 char");
+            //                }
+            //                else if (t == 1)
+            //                {
+            //                    // the password doesn't come in the right format
+            //                }
+            //                else
+            //                {
+            //                    // the password confirm doesn't match the password
+            //                    ModelState.AddModelError("UserPassword", "The Passwords Don't Match");
 
-                            }
-                            return View(u);
+            //                }
+            //                return View(u);
 
-                        }
-                        current.CourseProviderPassword = u.UserPassword;
-                    }
+            //            }
+            //            current.CourseProviderPassword = u.UserPassword;
+            //        }
 
 
-                    // update the user
-                    db.CourseProviders.Update(current);
-                    await db.SaveChangesAsync();
-                }
+            //        // update the user
+            //        db.CourseProviders.Update(current);
+            //        await db.SaveChangesAsync();
+               // }
 
 
                 return RedirectToAction("Profile", "CourseProvider");
-            }
+            //}
         }
 
         // go back to the user profile
@@ -555,6 +467,24 @@ namespace Online_Learning_Platform.Controllers
 
             // back to sign out
             return RedirectToAction("SignOut");
+        }
+        
+        // go to the correct dashboard
+        [HttpGet]    
+        public IActionResult DashBoard()
+        {
+            if (HttpContext.Session.GetString("Id") == null || HttpContext.Session.GetString("Type") == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else if (HttpContext.Session.GetString("Type") == "user")
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("DashBoard", "CourseProvider");
+            }
         }
     }
 }

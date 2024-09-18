@@ -10,40 +10,6 @@ namespace Online_Learning_Platform.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "CourseProviders",
-                columns: table => new
-                {
-                    CourseProviderId = table.Column<string>(type: "varchar(50)", nullable: false),
-                    CourseProviderName = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
-                    CourseProviderImage = table.Column<string>(type: "varchar(250)", nullable: false),
-                    CourseProviderDescription = table.Column<string>(type: "varchar(250)", nullable: false),
-                    CourseProviderEmail = table.Column<string>(type: "varchar(50)", nullable: false),
-                    CourseProviderPassword = table.Column<string>(type: "varchar(150)", nullable: false),
-                    CourseProviderBirthday = table.Column<DateTime>(type: "date", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_CourseProviders", x => x.CourseProviderId);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Users",
-                columns: table => new
-                {
-                    UserId = table.Column<string>(type: "varchar(50)", nullable: false),
-                    UserName = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
-                    UserImage = table.Column<string>(type: "varchar(250)", nullable: true),
-                    UserDescription = table.Column<string>(type: "varchar(250)", nullable: false),
-                    UserEmail = table.Column<string>(type: "varchar(50)", nullable: false),
-                    UserPassword = table.Column<string>(type: "varchar(150)", nullable: false),
-                    UserBirthday = table.Column<DateTime>(type: "date", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Users", x => x.UserId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Courses",
                 columns: table => new
                 {
@@ -58,12 +24,24 @@ namespace Online_Learning_Platform.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Courses", x => x.CourseId);
-                    table.ForeignKey(
-                        name: "FK_Courses_CourseProviders_CourseProviderId",
-                        column: x => x.CourseProviderId,
-                        principalTable: "CourseProviders",
-                        principalColumn: "CourseProviderId",
-                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    UserId = table.Column<string>(type: "varchar(50)", nullable: false),
+                    UserName = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
+                    UserImage = table.Column<string>(type: "varchar(250)", nullable: true),
+                    UserDescription = table.Column<string>(type: "varchar(250)", nullable: false),
+                    UserEmail = table.Column<string>(type: "varchar(50)", nullable: false),
+                    UserPassword = table.Column<string>(type: "varchar(150)", nullable: false),
+                    UserBirthday = table.Column<DateTime>(type: "date", nullable: false),
+                    UserType = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.UserId);
                 });
 
             migrationBuilder.CreateTable(
@@ -116,11 +94,6 @@ namespace Online_Learning_Platform.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Courses_CourseProviderId",
-                table: "Courses",
-                column: "CourseProviderId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Lessons_CourseId",
                 table: "Lessons",
                 column: "CourseId");
@@ -144,9 +117,6 @@ namespace Online_Learning_Platform.Migrations
 
             migrationBuilder.DropTable(
                 name: "Users");
-
-            migrationBuilder.DropTable(
-                name: "CourseProviders");
         }
     }
 }

@@ -12,7 +12,7 @@ using Online_Learning_Platform.Data;
 namespace Online_Learning_Platform.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240912023344_OnlineLearningPlatform")]
+    [Migration("20240917224843_OnlineLearningPlatform")]
     partial class OnlineLearningPlatform
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -55,43 +55,7 @@ namespace Online_Learning_Platform.Migrations
 
                     b.HasKey("CourseId");
 
-                    b.HasIndex("CourseProviderId");
-
                     b.ToTable("Courses");
-                });
-
-            modelBuilder.Entity("Online_Learning_Platform.Models.CourseProvider", b =>
-                {
-                    b.Property<string>("CourseProviderId")
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<DateTime>("CourseProviderBirthday")
-                        .HasColumnType("date");
-
-                    b.Property<string>("CourseProviderDescription")
-                        .IsRequired()
-                        .HasColumnType("varchar(250)");
-
-                    b.Property<string>("CourseProviderEmail")
-                        .IsRequired()
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<string>("CourseProviderImage")
-                        .IsRequired()
-                        .HasColumnType("varchar(250)");
-
-                    b.Property<string>("CourseProviderName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<string>("CourseProviderPassword")
-                        .IsRequired()
-                        .HasColumnType("varchar(150)");
-
-                    b.HasKey("CourseProviderId");
-
-                    b.ToTable("CourseProviders");
                 });
 
             modelBuilder.Entity("Online_Learning_Platform.Models.Lesson", b =>
@@ -163,6 +127,9 @@ namespace Online_Learning_Platform.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(150)");
 
+                    b.Property<int>("UserType")
+                        .HasColumnType("int");
+
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
@@ -181,17 +148,6 @@ namespace Online_Learning_Platform.Migrations
                     b.HasIndex("CourseId");
 
                     b.ToTable("UserCourses");
-                });
-
-            modelBuilder.Entity("Online_Learning_Platform.Models.Course", b =>
-                {
-                    b.HasOne("Online_Learning_Platform.Models.CourseProvider", "CourseProvider")
-                        .WithMany("Courses")
-                        .HasForeignKey("CourseProviderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CourseProvider");
                 });
 
             modelBuilder.Entity("Online_Learning_Platform.Models.Lesson", b =>
@@ -229,11 +185,6 @@ namespace Online_Learning_Platform.Migrations
                     b.Navigation("Lessons");
 
                     b.Navigation("UserCourses");
-                });
-
-            modelBuilder.Entity("Online_Learning_Platform.Models.CourseProvider", b =>
-                {
-                    b.Navigation("Courses");
                 });
 
             modelBuilder.Entity("Online_Learning_Platform.Models.User", b =>

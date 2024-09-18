@@ -32,6 +32,10 @@ namespace Online_Learning_Platform.Models
         [Column(TypeName = "date")]
         public DateTime UserBirthday { get; set; } = default;
 
+        [Column(TypeName = "int")]
+        [Required]
+        public int UserType { get; set; } = default;
+
         //the relation between the course and the user
         public ICollection<UserCourse>? UserCourses { get; set; }
 

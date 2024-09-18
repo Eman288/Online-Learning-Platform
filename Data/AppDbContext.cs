@@ -9,7 +9,6 @@ namespace Online_Learning_Platform.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<UserCourse> UserCourses { get; set; }
-        public DbSet<CourseProvider> CourseProviders { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
 
 
@@ -48,15 +47,6 @@ namespace Online_Learning_Platform.Data
             modelBuilder.Entity<Course>()
                 .Property(c => c.CourseDescription)
                 .HasMaxLength(250);
-
-            // Configure Course Provider entity
-            modelBuilder.Entity<CourseProvider>()
-                .HasKey(cp => cp.CourseProviderId);
-
-            modelBuilder.Entity<CourseProvider>()
-                .Property(cp => cp.CourseProviderName)
-                .IsRequired()
-                .HasMaxLength(50);
 
             // Configure Lesson entity
             modelBuilder.Entity<Lesson>()

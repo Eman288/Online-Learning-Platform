@@ -33,8 +33,7 @@ namespace Online_Learning_Platform.Models
         [Column(TypeName = "varchar(50)")] 
         public string CourseProviderId { get; set; } = string.Empty;
 
-        // Navigation property
-        public CourseProvider? CourseProvider { get; set; }
+       
 
 
         //relation between the course and the lessons

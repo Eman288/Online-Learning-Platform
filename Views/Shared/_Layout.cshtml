@@ -28,8 +28,17 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">AboutUs</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Courses</a>
+                        </li>
+                        @if (ViewContext.HttpContext.Session.GetString("Id") == null || ViewContext.HttpContext.Session.GetString("Type") == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="User" asp-action="DashBoard">DashBoard</a>
+                            </li>
+                        }
                     </ul>
                 </div>
 
