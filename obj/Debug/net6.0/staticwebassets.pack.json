@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\Sign.css"
     },
     {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },

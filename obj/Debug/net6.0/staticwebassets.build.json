@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ghEUOX8PokxvGcV6fwmU9DMtyLD1aEr/AVHUEzqI/s0=",
+  "Hash": "Ed/9+rktB04EwLe66/zdF0Jq19bHUpKZFTnKR+vspqk=",
   "Source": "Online Learning Platform",
   "BasePath": "_content/Online Learning Platform",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Online Learning Platform.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\dashboard.css",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "css/dashboard.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
     },
     {
       "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\home.css",

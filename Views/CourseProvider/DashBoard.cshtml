@@ -18,9 +18,13 @@
 <section class="courseProvider-details">
 
     <aside>
-        <button>Create a Course</button>
+        <a asp-controller="CourseProvider" asp-action="CreateCourse">
+            <button>Create a Course</button>
+        </a>
 
-        <button>Remove a Course</button>
+        <a asp-controller="CourseProvider" asp-action="RemoveCourse">
+            <button>Remove a Course</button>
+        </a>
 
         <p class="total-details">
             total of $ courses
@@ -37,9 +41,11 @@
             </div>
         </div>
 
-        <div>
+        <div class="rate">
             <div class="taken-rate"></div>
-            <button>View Details</button>
+            <a asp-controller="CourseProvider" asp-action="ViewCoursesDetails">
+                <button>View Details</button>
+            </a>
         </div>
 
     </div>

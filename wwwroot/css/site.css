@@ -30,7 +30,6 @@ body {
     background-image: url(../img/home.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
 
 header {
@@ -40,7 +39,7 @@ header {
 nav {
     height: 100%;
     margin: 0 !important;
-    background-color: transparent;
+    background-color: var(--font-color);
 }
 
 .main {
@@ -58,7 +57,7 @@ main {
 /*nav style*/
 
 nav a {
-    color: var(--font-color) !important;
+    color: var(--main-color) !important;
     font-weight: bold;
     font-size: 1.3vw;
 }

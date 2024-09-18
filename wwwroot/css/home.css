@@ -2,6 +2,10 @@
     --main-color: #1e0235;
     --second-main-color: #fa5090;
     --font-color: #fff;
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "GRAD" 0;
 }
 
 

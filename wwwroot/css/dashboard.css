@@ -1,0 +1,119 @@
+﻿/*user*/
+
+
+/*course provider*/
+
+* {
+    transition: all .4s ease;
+}
+
+.courseProvider-details {
+    height: 100%;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 5%;
+    background-color: var(--main-color);
+}
+
+.courseProvider-details a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.courseProvider-details aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+    background-color: var(--second-main-color);
+
+}
+
+aside button {
+    border-radius: 10px;
+    width: 80%;
+    border: 1px solid transparent;
+    box-shadow: 2px 2px 5px var(--main-color);
+    color: var(--second-main-color);
+}
+
+.courseProvider-details button {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 5%;
+    background-color: var(--font-color);
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+
+
+.courseProvider-details button:hover {
+    background-color: var(--main-color);
+    box-shadow: 2px 2px var(--font-color);
+}
+
+.courseProvider-details aside p {
+    border-bottom: 5px solid var(--font-color);
+    padding: 5% 2%;
+    text-align: center;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    gap: 5%;
+}
+
+.best-courses-details {
+    width: max-content;
+    min-width: 30vw;
+    height: 50%;
+    min-height: 30vw;
+    border: 3px solid #cd4176;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.details > div {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 20% max-content;
+    align-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+.rate {
+    grid-template-rows: max-content 20%;
+}
+
+.details button {
+    width: 80%;
+    height: 60%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: var(--font-color);
+    box-shadow: 2px 2px var(--second-main-color);
+}
+
+.details button:hover {
+    background-color: var(--second-main-color);
+    box-shadow: 2px 2px var(--font-color);
+}
+
+.taken-rate {
+    width: 20vw;
+    height: 20vw;
+    border: 3px solid #f0f0f0;
+    background-color: var(--font-color);
+    border-radius: 10px;
+}
