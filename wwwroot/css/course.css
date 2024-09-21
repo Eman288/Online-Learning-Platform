@@ -1,0 +1,88 @@
+﻿.container {
+    height: 100%;
+    padding: 3%;
+    gap: 10px;
+}
+
+.my-courses
+{
+    width: 100%;
+    height: 100%;
+}
+
+.my-courses > div {
+    background-color: var(--font-color);
+    border: 1px solid transparent;
+    padding: 2%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #5f5858;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+
+.my-courses img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*view course*/
+
+.course-block {
+    grid-template-columns: 25% 1fr;
+    display: grid;
+    height: 100%;
+}
+
+.lessons-area {
+    background-color: var(--main-color);
+    box-shadow: -8px 8px 3px #1a072b inset;
+}
+
+.lesson-tools {
+    background-color: #393636;
+    border-bottom: 2px solid #fff;
+}
+
+.course-details {
+    display: grid;
+    background-color: var(--second-main-color);
+    padding: 5%;
+    grid-template-rows: 20% 1fr;
+}
+
+.course-details a {
+    width: 100%;
+    text-align: end;
+}
+
+.course-details img {
+    width: 5%;
+}
+
+.course-details div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.course-details h4, .course-details p {
+    grid-column: 1 / 3;
+}
+
+.course-details div button {
+    border-radius: 10px;
+    border: 1px solid transparent;
+    width: 50%;
+    height: 50%;
+    box-shadow: 2px 2px 2px #ae3764;
+    justify-self: center;
+}
+
+.lesson-tools img {
+    width: 20%;
+}
+

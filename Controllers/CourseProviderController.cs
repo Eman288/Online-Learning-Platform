@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Online_Learning_Platform.Models;
 using Online_Learning_Platform.Data;
 
 namespace Online_Learning_Platform.Controllers
@@ -30,7 +31,7 @@ namespace Online_Learning_Platform.Controllers
             else if (HttpContext.Session.GetString("Type") == "courseProvider")
             {
                 //show the course provider profile with the data
-                return View(db.Users.Where(a => a.UserId == HttpContext.Session.GetString("Id")).FirstOrDefault());
+                return View(db.Users.Where(a => a.UserId.ToString() == HttpContext.Session.GetString("Id")).FirstOrDefault());
             }
             return RedirectToAction("Index", "Home");
         }
@@ -47,6 +48,8 @@ namespace Online_Learning_Platform.Controllers
             return View("Index", "Home");
         }
 
+        // a function to display the course provider dashboard
+        [HttpGet]
         public IActionResult DashBoard()
         {
             if (HttpContext.Session.GetString("Id") == null || HttpContext.Session.GetString("Type") == null)
@@ -59,8 +62,11 @@ namespace Online_Learning_Platform.Controllers
             }
             else
             {
-                return View();
+                return View(new Course());
             }
         }
+    
+        
+        
     }
 }

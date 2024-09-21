@@ -6,9 +6,10 @@ namespace Online_Learning_Platform.Models
     public class User
     {
         [Key]
-        [Column(TypeName ="varchar(50)")]
+        [Column(TypeName ="int")]
         [Required]
-        public string UserId { get; set; } = string.Empty;
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int UserId { get; set; }
 
         [Column(TypeName ="varchar(50)")]
         [Required]

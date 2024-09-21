@@ -24,8 +24,11 @@ namespace Online_Learning_Platform.Migrations
 
             modelBuilder.Entity("Online_Learning_Platform.Models.Course", b =>
                 {
-                    b.Property<string>("CourseId")
-                        .HasColumnType("varchar(50)");
+                    b.Property<int>("CourseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CourseId"), 1L, 1);
 
                     b.Property<DateTime>("CourseCreatedAt")
                         .HasColumnType("datetime");
@@ -44,10 +47,6 @@ namespace Online_Learning_Platform.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
-                    b.Property<string>("CourseProviderId")
-                        .IsRequired()
-                        .HasColumnType("varchar(50)");
-
                     b.Property<DateTime>("CourseUpdatedAt")
                         .HasColumnType("datetime");
 
@@ -58,12 +57,15 @@ namespace Online_Learning_Platform.Migrations
 
             modelBuilder.Entity("Online_Learning_Platform.Models.Lesson", b =>
                 {
-                    b.Property<string>("LessonId")
-                        .HasColumnType("varchar(50)");
+                    b.Property<int>("LessonId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Property<string>("CourseId")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LessonId"), 1L, 1);
+
+                    b.Property<int?>("CourseId")
                         .IsRequired()
-                        .HasColumnType("varchar(50)");
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("LessonCreatedAt")
                         .HasColumnType("datetime");
@@ -99,8 +101,11 @@ namespace Online_Learning_Platform.Migrations
 
             modelBuilder.Entity("Online_Learning_Platform.Models.User", b =>
                 {
-                    b.Property<string>("UserId")
-                        .HasColumnType("varchar(50)");
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"), 1L, 1);
 
                     b.Property<DateTime>("UserBirthday")
                         .HasColumnType("date");
@@ -135,11 +140,12 @@ namespace Online_Learning_Platform.Migrations
 
             modelBuilder.Entity("Online_Learning_Platform.Models.UserCourse", b =>
                 {
-                    b.Property<string>("UserId")
-                        .HasColumnType("varchar(50)");
+                    b.Property<int?>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Property<string>("CourseId")
-                        .HasColumnType("varchar(50)");
+                    b.Property<int?>("CourseId")
+                        .HasColumnType("int");
 
                     b.HasKey("UserId", "CourseId");
 

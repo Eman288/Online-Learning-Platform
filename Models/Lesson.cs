@@ -7,8 +7,9 @@ namespace Online_Learning_Platform.Models
     {
         [Required]
         [Key]
-        [Column(TypeName = "varchar(50)")]
-        public string LessonId { get; set; } = string.Empty;
+        [Column(TypeName = "int")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int LessonId { get; set; }
 
         [Required]
         [Column(TypeName = "varchar(50)")]
@@ -34,8 +35,8 @@ namespace Online_Learning_Platform.Models
 
         [Required]
         [ForeignKey("Course")]
-        [Column(TypeName = "varchar(50)")]
-        public string? CourseId { get; set; }
+        [Column(TypeName = "int")]
+        public int? CourseId { get; set; }
 
         //navagation
         public Course? Course { get; set; }

@@ -5,16 +5,17 @@ namespace Online_Learning_Platform.Models
 {
     public class UserCourse
     {
-        [Column(TypeName = "varchar(50)")]
+        [Column(TypeName = "int")]
         [Required]
-        public string? UserId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int? UserId { get; set; }
 
         // Navigation property
         public User? User { get; set; }
 
-        [Column(TypeName = "varchar(50)")]
+        [Column(TypeName = "int")]
         [Required]
-        public string? CourseId { get; set; }
+        public int? CourseId { get; set; }
 
         // Navigation property
         public Course? Course { get; set; }

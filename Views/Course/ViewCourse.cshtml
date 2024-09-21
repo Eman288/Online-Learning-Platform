@@ -1,0 +1,198 @@
+﻿@model Online_Learning_Platform.Models.Course
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using Newtonsoft.Json;
+@{
+    var Lesson = (ICollection<Lesson>)ViewData["Lessons"];
+    var LessonJson = JsonConvert.SerializeObject(Lesson);
+
+    var msg = (int)ViewData["Message"];
+
+    if (msg == 0)
+    {
+        <script>
+            alert("Can't Delete the Course, There is Users Assigned to It");
+        </script>
+    }
+}
+
+<head>
+
+    <style>
+        footer {
+            display:none;
+        }
+
+        .main {
+            height: 90%;
+        }
+
+
+        /*course edit*/
+
+        .save-edit-course, .course-name, .course-des, .course-img {
+            display: none;
+        }
+    </style>
+
+</head>
+
+
+<section class="course-block">
+
+
+    <div class="lessons-area">
+        <div class="lesson-tools">
+            <a asp-controller="Course" asp-action="AddLesson">
+                <img src="~/img/add.png" alt="add"/>
+            </a>
+        </div>
+
+        <div class="lessons">
+
+            <!--lessons will appear here-->
+
+        </div>
+    </div>
+
+    <div class="course-details">
+            <a onclick="EditCourse()">
+                <img src="~/img/edit.png" alt="edit"/>
+            </a>
+
+        <a onclick="DeleteCourse(@Model.CourseId)">
+            <img src="~/img/delete.png" alt="delete" />
+        </a>
+
+        
+         <div>
+            <form asp-controller="Course" asp-action="EditData" method="post" enctype="multipart/form-data">
+                <input id="id" name="id" value="@Model.CourseId" asp-for="CourseId" readonly hidden />
+
+                <div class="course-name">
+                    <label for="courseName">Course Name</label>
+                    <input id="courseName" name="courseName" type="text" maxlength="50" required asp-for="@Model.CourseName" value="@Model.CourseName"/>
+                </div>
+                <h4 class="name">@Model.CourseName</h4>
+
+                <div class="course-des">
+                    <label for="courseDes">Course Description</label>
+                    <textarea id="courseDes" name="courseDes" maxlength="250" required asp-for="@Model.CourseDescription">@Model.CourseDescription</textarea>
+                </div>                
+                <p class="des">@Model.CourseDescription</p>
+
+                <div class="course-img">
+                    <label for="courseImage">Course Image</label>
+                    <input id="courseImage" name="courseImage" type="file" accept="image/*" value="@Model.CourseImage">
+                </div>
+
+                <img src="~/Image/Course/@Model.CourseImage" alt="courseImage" />
+
+                <button class="save-edit-course" type="submit">Save</button>
+             </form>
+            
+
+            <button onclick="viewNextLesson()">View Next Lesson</button>
+
+            <button onclick="viewPreviousLesson()">View Previous Lesson</button>
+         </div>
+
+    </div>
+
+    
+
+</section>
+
+
+
+<script>
+
+    let currentLesson = 0;
+
+    let button = document.querySelector('.save-edit-course');
+    let courseName = document.querySelector('.course-name');
+    let courseDes = document.querySelector('.course-des');
+    let courseImg = document.querySelector('.course-img');
+    let name = document.querySelector('.name');
+    let des = document.querySelector('.des');
+
+    const lessons = @Html.Raw(LessonJson);
+
+    if (lessons.length === 0)
+    {
+        document.querySelector('.lessons').innerHTML = 'No Lessons here';
+    }
+
+    window.onload = function () {
+        button.style.display = "none"; // display the submit button
+        courseName.style.display = "none"; // display the name area
+        courseDes.style.display = "none"; // display the description area
+        courseImg.style.display = "none"; // display the img area
+
+        name.style.display = "block"; // hide the current name
+        des.style.display = "block";  // hide the curret description
+
+        lessons.forEach((element) => {
+            viewLesson(element.LessonId, element.LessonName);
+        });
+    }
+
+    // a function to create the lesson div
+    function viewLesson(id, name) {
+        let lesson = document.createElement('div');
+
+        lesson.innerHTML = `${name}`;
+
+        lesson.onclick = function() {
+            console.log("go to lesson");
+        }
+
+        document.querySelector('.lessons').appendChild(lesson);
+
+    }
+
+    // function viewNextLesson() {
+    //     if (currentLesson < lessons.length) { }
+        
+    // }
+
+    // function viewPreviousLesson() {
+
+    // }
+
+
+    // edit Course
+    function EditCourse() {
+        
+        button.style.display = "block"; // display the submit button
+        courseName.style.display = "block"; // display the name area
+        courseDes.style.display = "block"; // display the description area
+        courseImg.style.display = "block"; // display the img area
+
+        name.style.display = "none"; // hide the current name
+        des.style.display = "none";  // hide the curret description
+    }
+
+    // Function to delete a course
+    function DeleteCourse(id) {
+        let option = confirm("Are you sure you want to delete this course?");
+
+        if (option) {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = `/Course/DeleteCourse`;
+
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'Id'; // Match the parameter name in your action
+            input.value = id;
+
+            form.appendChild(input);
+            document.body.appendChild(form);
+            form.submit(); // Submit the form
+        }
+    }
+
+</script>

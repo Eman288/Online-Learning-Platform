@@ -1,4 +1,5 @@
-﻿@*
+﻿@model Online_Learning_Platform.Models.Course
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
@@ -18,7 +19,7 @@
 <section class="courseProvider-details">
 
     <aside>
-        <a asp-controller="CourseProvider" asp-action="CreateCourse">
+        <a onclick="CourseCreate()">
             <button>Create a Course</button>
         </a>
 
@@ -34,7 +35,11 @@
 
     <div class="details">
         <div>
-            <button>Courses' Details</button>
+
+            <a asp-controller="Course" asp-action="ViewMyCourses">
+                <button>Courses' Details</button>
+            </a>
+
             <div class="best-courses-details">
                 <h4>Best Courses</h4>
                 <div></div>
@@ -50,6 +55,46 @@
 
     </div>
 
+    <section class="course-creation">
+
+        <h4>Course Creation</h4>
+
+        <form asp-controller="Course" asp-action="CreateCourse" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="courseName">Course Name</label>
+                <input id="courseName" name="courseName" type="text" maxlength="50" required asp-for="@Model.CourseName"/>
+            </div>
+
+            <div>
+                <label for="courseDes">Course Description</label>
+                <textarea id="courseDes" name="courseDes" maxlength="250" required asp-for="@Model.CourseDescription"></textarea>
+            </div>
+
+            <div class="img">
+                <label for="courseImage">Course Image</label>
+                <input id="courseImage" name="courseImage" type="file" accept="image/*" >
+            </div>
+
+            <button onclick="CancelCreation()">Cancel</button>
+            <button type="submit">Create</button>
+        </form>
+
+    </section>
+
 </section>
 
 
+<script>
+
+    function CourseCreate()
+    {
+        let courseBlock = document.querySelector('.course-creation');
+        courseBlock.style.display = "grid";
+    }
+
+    function CacelCreation() {
+        let courseBlock = document.querySelector('.course-creation');
+        courseBlock.style.display = "none";
+    }
+
+</script>

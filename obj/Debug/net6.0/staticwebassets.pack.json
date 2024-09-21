@@ -5,8 +5,28 @@
       "PackagePath": "staticwebassets\\Online Learning Platform.bundle.scp.css"
     },
     {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\Image\\Course\\00fc1459-6a62-4e44-920c-9f0e15ab9ca2_cairo.jpg",
+      "PackagePath": "staticwebassets\\Image\\Course\\00fc1459-6a62-4e44-920c-9f0e15ab9ca2_cairo.jpg"
+    },
+    {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\Image\\Course\\0ac337d5-550a-43e5-85c2-f947c46dfa89_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\0ac337d5-550a-43e5-85c2-f947c46dfa89_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg"
+    },
+    {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\Image\\Course\\c6affee9-2dfb-472e-ac02-2b64dda0179c_Icono de patito - Variante Corazon.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\c6affee9-2dfb-472e-ac02-2b64dda0179c_Icono de patito - Variante Corazon.jpeg"
+    },
+    {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\Image\\Course\\cf6700ba-240c-4b81-8391-96b2a2eb04a7_Icono de patito - Variante navaja.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\cf6700ba-240c-4b81-8391-96b2a2eb04a7_Icono de patito - Variante navaja.jpeg"
+    },
+    {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\Sign.css",
       "PackagePath": "staticwebassets\\css\\Sign.css"
+    },
+    {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\course.css",
+      "PackagePath": "staticwebassets\\css\\course.css"
     },
     {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\dashboard.css",
@@ -29,6 +49,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\add.png",
+      "PackagePath": "staticwebassets\\img\\add.png"
+    },
+    {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\delete.png",
+      "PackagePath": "staticwebassets\\img\\delete.png"
+    },
+    {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\edit.png",
       "PackagePath": "staticwebassets\\img\\edit.png"
     },
@@ -39,6 +67,14 @@
     {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\home.png",
       "PackagePath": "staticwebassets\\img\\home.png"
+    },
+    {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\homepic.png",
+      "PackagePath": "staticwebassets\\img\\homepic.png"
+    },
+    {
+      "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
       "Id": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\user.png",

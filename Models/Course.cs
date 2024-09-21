@@ -7,8 +7,9 @@ namespace Online_Learning_Platform.Models
     {
         [Required]
         [Key]
-        [Column(TypeName = "varchar(50)")]
-        public string CourseId { get; set; } = string.Empty;
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column(TypeName = "int")]
+        public int CourseId { get; set; }
 
         [Required]
         [Column(TypeName ="varchar(50)")]
@@ -26,12 +27,6 @@ namespace Online_Learning_Platform.Models
         [Column(TypeName = "datetime")]
         public DateTime CourseUpdatedAt { get; set; } = DateTime.Now;
 
-        //relation between the course and the course provider
-
-        [Required]
-        [ForeignKey("CourseProvider")]
-        [Column(TypeName = "varchar(50)")] 
-        public string CourseProviderId { get; set; } = string.Empty;
 
        
 

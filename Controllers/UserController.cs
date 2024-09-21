@@ -28,16 +28,6 @@ namespace Online_Learning_Platform.Controllers
             return View(new User());
         }
 
-        [NonAction]
-        public bool UserIdCheck(User u)
-        {
-            var testID = db.Users.Where(a => a.UserId == u.UserId).FirstOrDefault();
-            if (testID != null)
-            {
-                return false;
-            }
-            return true;
-        }
 
 
         //check if the email exist or not
@@ -71,14 +61,7 @@ namespace Online_Learning_Platform.Controllers
         }
         [NonAction]
         public bool ConfUser(User u, IFormCollection f, IFormFile i, out int wentWrong)
-        {
-
-            // test id doesn't exist before in the database
-            if (!UserIdCheck(u))
-            {
-                wentWrong = 0;
-                return false;
-            }
+        { 
 
 
             // test email doesn't exist before in the database
@@ -139,7 +122,6 @@ namespace Online_Learning_Platform.Controllers
                 {
                     User newUser = new User();
 
-                    newUser.UserId = u.UserId;
                     newUser.UserName = u.UserName;
 
                     //working on
@@ -210,7 +192,7 @@ namespace Online_Learning_Platform.Controllers
                     {
                         if ((user.UserType == 1 && f["Type"] == "user") || (user.UserType == 2 && f["Type"] == "courseProvider"))
                         {
-                            HttpContext.Session.SetString("Id", user.UserId);
+                            HttpContext.Session.SetString("Id", user.UserId.ToString());
                             if (f["Type"] == "user")
                             {
                                 HttpContext.Session.SetString("Type", "user");
@@ -251,7 +233,7 @@ namespace Online_Learning_Platform.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            return View(db.Users.Where(a => a.UserId == HttpContext.Session.GetString("Id")).FirstOrDefault());
+            return View(db.Users.Where(a => a.UserId.ToString() == HttpContext.Session.GetString("Id")).FirstOrDefault());
 
         }
 
@@ -276,7 +258,7 @@ namespace Online_Learning_Platform.Controllers
             }
             var userId = HttpContext.Session.GetString("Id");
 
-            User user = await db.Users.Where(u => u.UserId == userId).FirstOrDefaultAsync();
+            User user = await db.Users.Where(u => u.UserId.ToString() == userId).FirstOrDefaultAsync();
 
             if (user != null)
             {
@@ -312,7 +294,7 @@ namespace Online_Learning_Platform.Controllers
 
             if (HttpContext.Session.GetString("Type") == "user")
             {
-                User? current = db.Users.Where(a => a.UserId == HttpContext.Session.GetString("Id")).FirstOrDefault();
+                User? current = db.Users.Where(a => a.UserId.ToString() == HttpContext.Session.GetString("Id")).FirstOrDefault();
 
                 if (current != null)
                 {
@@ -454,7 +436,7 @@ namespace Online_Learning_Platform.Controllers
         public IActionResult DeleteUser()
         {
             // find user
-            User current = db.Users.Where(a => a.UserId == HttpContext.Session.GetString("Id")).FirstOrDefault();
+            User current = db.Users.Where(a => a.UserId.ToString() == HttpContext.Session.GetString("Id")).FirstOrDefault();
 
             // remove the user data
 

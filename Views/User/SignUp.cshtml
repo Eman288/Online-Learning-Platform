@@ -19,11 +19,6 @@
     <h1>LearnNest!</h1>
 
     <form asp-controller="User" asp-action="SignUp" method="post" class="signUp-form" enctype="multipart/form-data">
-        <div>
-            <label for="id">National Id</label>
-            <input class="input" id="id" type="text" required placeholder="National Id" asp-for="UserId" />
-            <span asp-validation-for="UserId" class="text-danger"></span>
-        </div>
 
         <div>
             <label for="name">Name</label>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Sign.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/course.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/profile.css" asp-append-version="true" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,11 +60,9 @@
                     }
                     else
                     {
-                        <button class="sign-in">
-                            <a asp-area="" asp-controller="User" asp-action="Profile">
-                                <img src="../wwwroot/img/user.png" alt="profile" class="profile"/>
+                            <a asp-area="" asp-controller="User" asp-action="Profile" class="profile-link">
+                                <img src="~/img/user.png" alt="profile" class="profileimg"/>
                             </a>
-                        </button>
                     }
                 </div>
             </div>

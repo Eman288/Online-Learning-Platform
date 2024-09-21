@@ -67,3 +67,4 @@ E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online L
 E:\Full Stack Route!\Projects\Online-Learning-Platform\obj\Debug\net6.0\Online L.F180E300.Up2Date
 E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\Humanizer.dll
 E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Full Stack Route!\Projects\Online-Learning-Platform\bin\Debug\net6.0\Newtonsoft.Json.dll
