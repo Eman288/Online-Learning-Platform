@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yUzY71ejPrmkZ3fSr2HSVtHaMgCKZGTkEYhAvZ96lEU=",
+  "Hash": "KgaGsK/9zYKu4Fvz/CKknXPluE0A5A8NbZfb212tIDM=",
   "Source": "Online Learning Platform",
   "BasePath": "_content/Online Learning Platform",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Online Learning Platform\\wwwroot",
       "Source": "Online Learning Platform",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Online Learning Platform.styles.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Online Learning Platform.styles.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "Online Learning Platform.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Online Learning Platform.styles.css"
+      "OriginalItemSpec": "M:\\ooo\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Online Learning Platform.styles.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Online Learning Platform.bundle.scp.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Online Learning Platform.bundle.scp.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "Online Learning Platform.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Online Learning Platform.bundle.scp.css"
+      "OriginalItemSpec": "M:\\ooo\\Online-Learning-Platform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Online Learning Platform.bundle.scp.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\course.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\course.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "css/course.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\course.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\dashboard.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\dashboard.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "css/dashboard.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\home.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\home.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "css/home.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\profile.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\profile.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "css/profile.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\profile.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\Sign.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\Sign.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "css/Sign.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Sign.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\css\\site.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\site.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\favicon.ico",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\favicon.ico",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\Image\\Course\\00fc1459-6a62-4e44-920c-9f0e15ab9ca2_cairo.jpg",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\00fc1459-6a62-4e44-920c-9f0e15ab9ca2_cairo.jpg",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "Image/Course/00fc1459-6a62-4e44-920c-9f0e15ab9ca2_cairo.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\Image\\Course\\00fc1459-6a62-4e44-920c-9f0e15ab9ca2_cairo.jpg"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\Image\\Course\\0ac337d5-550a-43e5-85c2-f947c46dfa89_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\0ac337d5-550a-43e5-85c2-f947c46dfa89_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "Image/Course/0ac337d5-550a-43e5-85c2-f947c46dfa89_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg",
       "AssetKind": "All",
@@ -226,10 +226,29 @@
       "OriginalItemSpec": "wwwroot\\Image\\Course\\0ac337d5-550a-43e5-85c2-f947c46dfa89_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\Image\\Course\\c6affee9-2dfb-472e-ac02-2b64dda0179c_Icono de patito - Variante Corazon.jpeg",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\9a858a74-aa9b-4904-9079-c6dd41e0f31e_942ba781-90bd-4166-bcda-d9f143908c58.jpeg",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "Image/Course/9a858a74-aa9b-4904-9079-c6dd41e0f31e_942ba781-90bd-4166-bcda-d9f143908c58.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\Course\\9a858a74-aa9b-4904-9079-c6dd41e0f31e_942ba781-90bd-4166-bcda-d9f143908c58.jpeg"
+    },
+    {
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\c6affee9-2dfb-472e-ac02-2b64dda0179c_Icono de patito - Variante Corazon.jpeg",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "Image/Course/c6affee9-2dfb-472e-ac02-2b64dda0179c_Icono de patito - Variante Corazon.jpeg",
       "AssetKind": "All",
@@ -245,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\Image\\Course\\c6affee9-2dfb-472e-ac02-2b64dda0179c_Icono de patito - Variante Corazon.jpeg"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\Image\\Course\\cf6700ba-240c-4b81-8391-96b2a2eb04a7_Icono de patito - Variante navaja.jpeg",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\cf6700ba-240c-4b81-8391-96b2a2eb04a7_Icono de patito - Variante navaja.jpeg",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "Image/Course/cf6700ba-240c-4b81-8391-96b2a2eb04a7_Icono de patito - Variante navaja.jpeg",
       "AssetKind": "All",
@@ -264,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\Image\\Course\\cf6700ba-240c-4b81-8391-96b2a2eb04a7_Icono de patito - Variante navaja.jpeg"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\add.png",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\add.png",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "img/add.png",
       "AssetKind": "All",
@@ -283,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\img\\add.png"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\delete.png",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\delete.png",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "img/delete.png",
       "AssetKind": "All",
@@ -302,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\img\\delete.png"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\edit.png",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\edit.png",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "img/edit.png",
       "AssetKind": "All",
@@ -321,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\edit.png"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\home.jpg",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\home.jpg",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "img/home.jpg",
       "AssetKind": "All",
@@ -340,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\img\\home.jpg"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\home.png",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\home.png",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "img/home.png",
       "AssetKind": "All",
@@ -359,10 +378,29 @@
       "OriginalItemSpec": "wwwroot\\img\\home.png"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\homepic.png",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\homePage.jpg",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "img/homePage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\homePage.jpg"
+    },
+    {
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\homepic.png",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "img/homepic.png",
       "AssetKind": "All",
@@ -378,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\img\\homepic.png"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\logo.png",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\logo.png",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "img/logo.png",
       "AssetKind": "All",
@@ -397,10 +435,48 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\img\\user.png",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\noCourseImg.png",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "img/noCourseImg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\noCourseImg.png"
+    },
+    {
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\profile.png",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "img/profile.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\profile.png"
+    },
+    {
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\user.png",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "img/user.png",
       "AssetKind": "All",
@@ -416,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\img\\user.png"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\js\\site.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\js\\site.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -435,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -454,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -473,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -492,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -511,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -530,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -549,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -568,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -587,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -606,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -625,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -644,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -663,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -682,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -701,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -720,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -739,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -758,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -777,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -796,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -815,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -834,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -853,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -872,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -891,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -910,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -929,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -948,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -967,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -986,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1005,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1024,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1043,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1062,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1081,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1100,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1119,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1138,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1157,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1176,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1195,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1214,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1233,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1252,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1271,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1290,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1309,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1328,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1347,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1366,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1385,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1404,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1423,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1442,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1461,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1480,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1499,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Online Learning Platform",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\wwwroot\\",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
       "BasePath": "_content/Online Learning Platform",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

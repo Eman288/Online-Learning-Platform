@@ -58,37 +58,37 @@
     </div>
 
     <div class="course-details">
-            <a onclick="EditCourse()">
-                <img src="~/img/edit.png" alt="edit"/>
-            </a>
+           
 
         <a onclick="DeleteCourse(@Model.CourseId)">
             <img src="~/img/delete.png" alt="delete" />
         </a>
-
+        <a onclick="EditCourse()">
+            <img src="~/img/edit.png" alt="edit" />
+        </a>
         
-         <div>
+         <div style="grid-column: 1/ 3;">
             <form asp-controller="Course" asp-action="EditData" method="post" enctype="multipart/form-data">
                 <input id="id" name="id" value="@Model.CourseId" asp-for="CourseId" readonly hidden />
 
                 <div class="course-name">
                     <label for="courseName">Course Name</label>
-                    <input id="courseName" name="courseName" type="text" maxlength="50" required asp-for="@Model.CourseName" value="@Model.CourseName"/>
+                    <input id="courseName" name="courseName" type="text" maxlength="50" required asp-for="@Model.CourseName" value="@Model.CourseName" readonly />
                 </div>
-                <h4 class="name">@Model.CourseName</h4>
-
+@*                 <h4 class="name">@Model.CourseName</h4>
+ *@
                 <div class="course-des">
                     <label for="courseDes">Course Description</label>
-                    <textarea id="courseDes" name="courseDes" maxlength="250" required asp-for="@Model.CourseDescription">@Model.CourseDescription</textarea>
+                    <textarea id="courseDes" name="courseDes" maxlength="250" required asp-for="@Model.CourseDescription" readonly>@Model.CourseDescription</textarea>
                 </div>                
-                <p class="des">@Model.CourseDescription</p>
-
+@*                 <p class="des">@Model.CourseDescription</p>
+ *@
                 <div class="course-img">
                     <label for="courseImage">Course Image</label>
                     <input id="courseImage" name="courseImage" type="file" accept="image/*" value="@Model.CourseImage">
                 </div>
 
-                <img src="~/Image/Course/@Model.CourseImage" alt="courseImage" />
+                <img src="~@Model.CourseImage" alt="courseImage" />
 
                 <button class="save-edit-course" type="submit">Save</button>
              </form>
@@ -112,12 +112,10 @@
     let currentLesson = 0;
 
     let button = document.querySelector('.save-edit-course');
-    let courseName = document.querySelector('.course-name');
-    let courseDes = document.querySelector('.course-des');
+    let courseName = document.querySelector('#courseName');
+    let courseDes = document.querySelector('#courseDes');
     let courseImg = document.querySelector('.course-img');
-    let name = document.querySelector('.name');
-    let des = document.querySelector('.des');
-
+    
     const lessons = @Html.Raw(LessonJson);
 
     if (lessons.length === 0)
@@ -127,17 +125,16 @@
 
     window.onload = function () {
         button.style.display = "none"; // display the submit button
-        courseName.style.display = "none"; // display the name area
-        courseDes.style.display = "none"; // display the description area
+        courseName.setAttribute('readonly', '');  // display the name area
+        courseDes.setAttribute('readonly', ''); // display the description area
         courseImg.style.display = "none"; // display the img area
-
-        name.style.display = "block"; // hide the current name
-        des.style.display = "block";  // hide the curret description
 
         lessons.forEach((element) => {
             viewLesson(element.LessonId, element.LessonName);
         });
     }
+
+
 
     // a function to create the lesson div
     function viewLesson(id, name) {
@@ -167,12 +164,9 @@
     function EditCourse() {
         
         button.style.display = "block"; // display the submit button
-        courseName.style.display = "block"; // display the name area
-        courseDes.style.display = "block"; // display the description area
+        courseName.removeAttribute('readonly'); // display the name area
+        courseDes.removeAttribute('readonly'); // display the description area
         courseImg.style.display = "block"; // display the img area
-
-        name.style.display = "none"; // hide the current name
-        des.style.display = "none";  // hide the curret description
     }
 
     // Function to delete a course

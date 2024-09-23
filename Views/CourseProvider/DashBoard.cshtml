@@ -3,6 +3,8 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    var numCourses = (int)ViewData["numCourses"];
+    var numStudents = (int)ViewData["numStudents"];
 }
 
 <style>
@@ -28,8 +30,6 @@
         </a>
 
         <p class="total-details">
-            total of $ courses
-            were created
         </p>
     </aside>
 
@@ -47,13 +47,20 @@
         </div>
 
         <div class="rate">
-            <div class="taken-rate"></div>
+
+            <div class="taken-rate">
+                        <p>Students Taked Your Courses:</p>
+                <div id="number"></div>
+
+            </div>
+
+
             <a asp-controller="CourseProvider" asp-action="ViewCoursesDetails">
                 <button>View Details</button>
             </a>
         </div>
 
-    </div>
+    </div> 
 
     <section class="course-creation">
 
@@ -62,12 +69,12 @@
         <form asp-controller="Course" asp-action="CreateCourse" method="post" enctype="multipart/form-data">
             <div>
                 <label for="courseName">Course Name</label>
-                <input id="courseName" name="courseName" type="text" maxlength="50" required asp-for="@Model.CourseName"/>
+                <input id="courseName" name="courseName" type="text" maxlength="50" required asp-for="@Model.CourseName" style="border-bottom: 3px solid var(--second-main-color); padding: 2%;"/>
             </div>
 
             <div>
                 <label for="courseDes">Course Description</label>
-                <textarea id="courseDes" name="courseDes" maxlength="250" required asp-for="@Model.CourseDescription"></textarea>
+                <textarea id="courseDes" name="courseDes" maxlength="250" required asp-for="@Model.CourseDescription" style="border-bottom: 3px solid var(--second-main-color); padding: 2%;"></textarea>
             </div>
 
             <div class="img">
@@ -75,10 +82,9 @@
                 <input id="courseImage" name="courseImage" type="file" accept="image/*" >
             </div>
 
-            <button onclick="CancelCreation()">Cancel</button>
             <button type="submit">Create</button>
         </form>
-
+        <button onclick="CancelCreation()">Cancel</button>
     </section>
 
 </section>
@@ -86,15 +92,38 @@
 
 <script>
 
-    function CourseCreate()
+    window.onload = function ()
     {
-        let courseBlock = document.querySelector('.course-creation');
-        courseBlock.style.display = "grid";
+        document.querySelector('.total-details').innerHTML = `You Have Created ${@Html.Raw(numCourses)} in Total`;
     }
 
-    function CacelCreation() {
+    function CourseCreate() 
+    {
         let courseBlock = document.querySelector('.course-creation');
-        courseBlock.style.display = "none";
+        courseBlock.style.transform = "translateY(0px)";
+        ;
     }
+
+    function CancelCreation() {
+        let courseBlock = document.querySelector('.course-creation');
+        courseBlock.style.transform = "translateY(-1000px)";
+    }
+
+    /*Number of Students Animation*/
+
+    let number = document.getElementById("number");
+    let counter = 0;
+    let val = @Html.Raw(numStudents);
+    number.innerHTML = counter + ' Student';
+    setInterval(() => {
+        if (counter == val) {
+            clearInterval();
+        }
+        else {
+            counter += 1;
+            number.innerHTML = counter + ' Student';
+        }
+
+    }, 30);
 
 </script>

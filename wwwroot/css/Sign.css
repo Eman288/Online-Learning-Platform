@@ -1,9 +1,4 @@
-﻿:root {
-    --main-color: #1e0235;
-    --second-main-color: #fa5090;
-    --font-color: #fff;
-}
-
+﻿
 .sign {
     display: flex;
     height: 100%;
@@ -12,18 +7,30 @@
     justify-content: center;
     border: 3px solid var(--second-main-color);
     border-radius: 10px;
-    background-color: #432b3d63;
+    background-color: #1d26498a;
     position: relative;
     z-index: 1;
 }
 
 .sign-in-form {
     height: 80%;
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 90%;
     flex-direction: column;
+    align-content: stretch;
     align-items: center;
-    justify-content: space-around;
+    justify-items: center;
+}
+
+.sign-in-form div {
+    display: grid;
+    justify-content: start;
+}
+
+.sign-in-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .form-content {
@@ -60,13 +67,14 @@ inputs {
 }
 
 .sign-in-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
 }
 
 .sign-in-buttons button {
-    width: 40%;
+    width: 100%;
+    height: 70%;
     background-color: var(--second-main-color);
     border: 1px solid transparent;
     padding: 10px;
@@ -82,7 +90,14 @@ inputs {
 }
 
 .sign-in-buttons div {
-    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+}
+
+.sign-in-buttons div {
+    width: 100%;
     display: flex;
     color: var(--font-color);
     flex-direction: column;
@@ -143,6 +158,10 @@ inputs {
     filter: opacity(0.5);
 }
 
+.SignUp-block h1 img {
+    width: 50%;
+}
+
 .signUp-form button {
     background-color: var(--second-main-color);
     padding: 5px;
@@ -153,8 +172,8 @@ inputs {
 }
 
 .signUp-form button:hover {
-    background-color: #b14181;
-    color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--second-main-color);
 }
 
 .SignUp-block .type {
@@ -167,13 +186,18 @@ inputs {
     align-items: flex-start;
 }
 
-.SignUp-block input {
+.SignUp-block input, .sign-in-form input {
     border: none;
     outline: none;
+    border-radius: 5px;
     border-bottom: 2px solid var(--second-main-color);
     /* border-radius: 5px; */
     /* opacity: .7; */
     color: #635369;
+}
+
+.sign-in-form label {
+    color: var(--font-color);
 }
 
 .input {

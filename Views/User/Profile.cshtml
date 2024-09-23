@@ -22,7 +22,16 @@
 <div class="profile">
     <div class="profile-actions">
         <a asp-controller="User" asp-action="DashBoard">My Dashboard</a>
-        <a href="#">Courses</a>
+        @if (ViewContext.HttpContext.Session.GetString("Type") == "user")
+        {
+            <a href="#">Courses</a>
+        }
+        else
+        {
+            <a asp-controller="Course" asp-action="ViewMyCourses">
+                 Courses
+             </a>
+        }
         <a asp-controller="User" asp-action="SignOut" class="signout">
             <button>Sign Out</button>
         </a>

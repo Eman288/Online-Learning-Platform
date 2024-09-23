@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Online_Learning_Platform.Models;
 using Online_Learning_Platform.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Online_Learning_Platform.Controllers
 {
@@ -62,6 +64,21 @@ namespace Online_Learning_Platform.Controllers
             }
             else
             {
+                var id = int.Parse(HttpContext.Session.GetString("Id"));
+                var courses = db.UserCourses
+                                        .Where(a => a.UserId == id)
+                                        .Include(c => c.Course)
+                                        .ToList();
+                var numOfStudents = 0;
+                foreach (var course in courses)
+                {
+                    var students = db.UserCourses
+                             .Where(a => a.CourseId == course.CourseId && a.UserId != id)
+                             .ToList();
+                    numOfStudents += students.Count();
+                }
+                ViewData["numStudents"] = numOfStudents;
+                ViewData["numCourses"] = courses.Count();
                 return View(new Course());
             }
         }

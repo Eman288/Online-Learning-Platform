@@ -74,6 +74,10 @@ namespace Online_Learning_Platform.Controllers
                 // Store the relative path in the Course model (use forward slashes for URLs)
                 NewCourse.CourseImage = "/Image/Course/" + uniqueFileName;
             }
+            else
+            {
+                NewCourse.CourseImage = "/img/noCourseImg.png";
+            }
 
             // add the course into the database
            

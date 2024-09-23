@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="progress-circle">
+    <svg>
+        <circle class="background" cx="80" cy="80" r="70"></circle>
+        <circle class="progress" cx="80" cy="80" r="70"></circle>
+    </svg>
+    <div class="progress-number">65%</div>
+</div>
+
+<sctipt>
+    /*animation script*/
+    const progressCircle = document.querySelector('.progress');
+    const percentage = 65;  // The percentage you want to show
+    const totalLength = 440; // Total length of the circle's circumference
+    const offset = totalLength - (totalLength * percentage / 100);  // Calculate stroke-dashoffset value
+
+    // Apply animation after a delay to allow the transition to be visible
+    setTimeout(() => {
+    progressCircle.style.strokeDashoffset = offset;
+    }, 100);  // 100ms delay to trigger the animation
+
+
+</sctipt>

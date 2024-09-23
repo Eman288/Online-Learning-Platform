@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NX7Al6l2xJq8LOT0AI3exfhshGg08BIZAC3IdYXovhDK1lNwNgRfzUAOKKu3l6iAfkgSlpDDtqcKe9JsnpNgIQ==",
+  "dgSpecHash": "kcFKBYTr4S3UTPcNzHWxFP437PIzHf9TM3qCUu2ypnvJsTgY70ZRRzan681W9YRenVy/oBVDtmdZNkk+3YIkXQ==",
   "success": true,
-  "projectFilePath": "E:\\Full Stack Route!\\Projects\\Online-Learning-Platform\\Online Learning Platform.csproj",
+  "projectFilePath": "M:\\ooo\\Online-Learning-Platform\\Online Learning Platform.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ALTHOURAYA\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ALTHOURAYA\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

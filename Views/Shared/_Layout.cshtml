@@ -16,13 +16,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="~/Online_Learning_Platform.styles.css" asp-append-version="true" />
-    <link>
+    <link rel="icon"  href="~/img/logo.png">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LearnNest</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="width: 5%;">
+                    <img src="~/img/logo.png" width="100%"/>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -74,7 +76,7 @@
         </main>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" style="display: none;">
         <div class="container">
             &copy; 2024 - Online_Learning_Platform - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
             <a href="https://www.freepik.com/free-vector/female-student-listening-webinar-online_9175118.htm#fromView=search&page=1&position=34&uuid=9478143e-93f2-43fa-9a51-f89d49459d70">Image by pch.vector on Freepik</a>

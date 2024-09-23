@@ -25,26 +25,30 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                z-index: -1; 
+                z-index: -1;
                 filter: drop-shadow(2px 4px 6px black) blur(1px);
             }
     </style>
 </head>
 <main>
-<div class="sign">
-    <form class="sign-in-form" asp-controller="User" asp-action="SignIn" method="post" enctype="multipart/form-data">
+    <div class="sign">
+        <form class="sign-in-form" asp-controller="User" asp-action="SignIn" method="post" enctype="multipart/form-data">
 
-        <div class="form-content">
-            <div class="labels">
-                <label for="email">Email</label>
-                <label for="pass">Password</label>
-            </div>
+            <div class="form-content">
 
-            <div class="inputs">
-                <input id="email" type="email" placeholder="Enter Your Email" asp-for="UserEmail" required/>
-                <span asp-validation-for="UserEmail" class="text-danger"></span>
-                <input id="pass" type="password" placeholder="Enter Your Password" asp-for="UserPassword" required/>
-                <span asp-validation-for="UserPassword" class="text-danger"></span>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter Your Email" asp-for="UserEmail" required />
+                    <span asp-validation-for="UserEmail" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label for="pass">Password</label>
+                    <input id="pass" type="password" placeholder="Enter Your Password" asp-for="UserPassword" required />
+                    <span asp-validation-for="UserPassword" class="text-danger"></span>
+                </div>
+                
+                <div>
                     <div>
                         <label for="user">User</label>
                         <input class="input" id="user" type="radio" value="user" name="Type" required />
@@ -56,17 +60,18 @@
                         <span asp-validation-for="UserType" class="text-danger"></span>
                     </div>
                 </div>
-        </div>
-
-        <div class="sign-in-buttons">
-            <button type="submit">Sign In</button>
-            <div>
-                <p>Don't have an account? join us!</p>
-                <a asp-area="" asp-controller="Home" asp-action="Index">Join Us!</a>
+                    
             </div>
-        </div>
+
+            <div class="sign-in-buttons">
+                <button type="submit">Sign In</button>
+                <div>
+                    <p>Don't have an account? join us!</p>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Join Us!</a>
+                </div>
+            </div>
 
 
-    </form>
-</div>
+        </form>
+    </div>
 </main>
