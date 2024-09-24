@@ -193,7 +193,36 @@ namespace Online_Learning_Platform.Controllers
             return View(course);
         }
 
-        
+
+        // a function to save an img for a course
+        [NonAction]
+        private string SaveImage(IFormFile img)
+        {
+            // Generate a unique file name to prevent overwriting
+            var fileName = Path.GetFileName(img.FileName);
+            var uniqueFileName = Guid.NewGuid().ToString() + "_" + fileName;
+
+            // Set the correct path to save the image
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Image", "Course");
+
+            // Ensure the directory exists
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            var filePath = Path.Combine(folderPath, uniqueFileName);
+
+            // Save the file
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                img.CopyTo(stream);
+            }
+
+            // Return the relative path to the saved image
+            return "/Image/Course/" + uniqueFileName;
+        }
+
         [HttpPost]
         public IActionResult EditData(IFormCollection f, IFormFile courseImage)
         {
@@ -245,18 +274,19 @@ namespace Online_Learning_Platform.Controllers
             }
 
             //// Handle image upload
-            //if (courseImage != null && courseImage.Length > 0)
-            //{
-            //    // Process the uploaded image (store it in a directory or database)
-            //    var filePath = Path.Combine("wwwroot/images/courses", courseImage.FileName);
-            //    using (var stream = new FileStream(filePath, FileMode.Create))
-            //    {
-            //        courseImage.CopyTo(stream);
-            //    }
+            
+            if (courseImage != null)
+            {
+                // Check if the image file exists before deleting
+                if (System.IO.File.Exists(course.CourseImage))
+                {
+                    // Delete the old image file
+                    System.IO.File.Delete(course.CourseImage);
+                }
+                course.CourseImage  = SaveImage(courseImage);
+            }
 
-            //    // Save the file name or path to the course record
-            //    course.CourseImage = courseImage.FileName;
-            //}
+            course.CourseUpdatedAt = DateTime.Now;
 
             db.Courses.Update(course);
             isCourseProvider.Course = course;

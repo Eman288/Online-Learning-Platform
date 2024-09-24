@@ -19,3 +19,51 @@
     color: var(--main-color);
     font-weight: bold;
 }
+
+.lesson-details {
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 45% 45%;
+    padding: 1% 5%;
+    background-color: var(--font-color);
+    grid-template-rows: 10% 90%;
+}
+
+.lesson-details form {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 43% 55%;
+    grid-template-rows: 15% 50% 15%;
+    gap: 2%;
+}
+
+.lesson-video {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.lesson-video * {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lesson-details button {
+    border-radius: 10px;
+    border: 1px solid transparent;
+    width: 60%;
+    height: 60%;
+    box-shadow: 2px 2px 2px var(--second-main-color);
+    background-color: var(--second-font-color);
+    color: var(--main-color);
+    font-weight: bold;
+    justify-self: center;
+}
+
+.lesson-details a img {
+    height: 50%;
+}
+
+.lesson-video {
+    display: block !important;
+}

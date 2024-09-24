@@ -86,6 +86,7 @@
 
 .lessons-area {
     background-color: var(--font-color);
+    overflow: auto;
     box-shadow: -6px 1px var(--main-color) inset;
 }
 
@@ -154,7 +155,7 @@
     height: 100%;
 }
 
-.course-details *{
+.course-details *, .lesson-details *{
     font-size: 1.2vw;
 }
 
@@ -170,7 +171,7 @@ gap: 5%;
     grid-template-rows: 70% 20%;
 }
 
-.course-details form div {
+.course-details form div, .lesson-details form div{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: max-content 50%;
@@ -206,7 +207,7 @@ textarea::-webkit-scrollbar-thumb {
     }
 }
 
-.course-details form input, .course-details form textarea {
+.course-details form input, .course-details form textarea, .lesson-details form input, .lesson-details form textarea {
     border: none;
     outline: none;
     border-bottom: 3px solid var(--second-main-color);
@@ -218,11 +219,11 @@ textarea::-webkit-scrollbar-thumb {
     grid-column: 1 / 3;
 }
 
-.course-details div button {
+.course-details div button, .lesson-details div button{
     border-radius: 10px;
     border: 1px solid transparent;
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 100%;
     box-shadow: 2px 2px 2px var(--second-main-color);
     background-color: var(--second-font-color);
     color: var(--main-color);
@@ -230,7 +231,8 @@ textarea::-webkit-scrollbar-thumb {
     justify-self: center;
 }
 
-.course-details div button:hover {
+.course-details div button:hover, .lesson-details div button:hover
+{
     background-color: var(--second-main-color);
     box-shadow: 2px 2px 2px var(--second-font-color);
     justify-self: center;
@@ -259,4 +261,32 @@ textarea::-webkit-scrollbar-thumb {
     color: var(--font-color);
     margin: 0;
     cursor: pointer;
+}
+
+
+
+* {
+    --sb-track-color: #1d2649;
+    --sb-thumb-color: #e42a6b;
+    --sb-size: 10px;
+}
+
+*::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+}
+
+    *::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 1px;
+    }
+
+@supports not selector(::-webkit-scrollbar) {
+    * {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
 }

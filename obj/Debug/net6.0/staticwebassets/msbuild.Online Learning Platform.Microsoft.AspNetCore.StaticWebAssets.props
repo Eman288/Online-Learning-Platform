@@ -1360,5 +1360,21 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\video\Lesson\496c5c37-8133-486a-8c5d-64271669af0f_About Us - Google Chrome 2024-05-04 21-15-01.mp4))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\video\Lesson\66a69b0c-f347-4db7-9b97-a02482f5d25c_夜に駆けるをiPhoneの着信音にしてみた【YOASOBI】.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>Online Learning Platform</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Online Learning Platform</BasePath>
+      <RelativePath>video/Lesson/66a69b0c-f347-4db7-9b97-a02482f5d25c_夜に駆けるをiPhoneの着信音にしてみた【YOASOBI】.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\video\Lesson\66a69b0c-f347-4db7-9b97-a02482f5d25c_夜に駆けるをiPhoneの着信音にしてみた【YOASOBI】.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
   </ItemGroup>
 </Project>

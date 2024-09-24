@@ -20,6 +20,8 @@ namespace Online_Learning_Platform.Controllers
         {
             return View();
         }
+        [NonAction]
+        // save an image in the lesson folder and return the path
         private string SaveImage(IFormFile img)
         {
             // Generate a unique file name to prevent overwriting
@@ -46,7 +48,9 @@ namespace Online_Learning_Platform.Controllers
             // Return the relative path to the saved image
             return "/Image/Lesson/" + uniqueFileName;
         }
+
         //save a video in the lesson folder and return the path
+        [NonAction]
         private string SaveVideo(IFormFile video)
         {
             // Generate a unique file name to prevent overwriting
@@ -131,5 +135,108 @@ namespace Online_Learning_Platform.Controllers
             }
             return RedirectToAction("Index", "Home");
         }
+
+        // a function to delete a lesson
+        [HttpPost]
+        public IActionResult DeleteLesson(int id)
+        {
+            if (
+                HttpContext.Session.GetString("Id") == null
+                || HttpContext.Session.GetString("Type") == null
+                || HttpContext.Session.GetString("Type") == "user"
+                )
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            var lesson = db.Lessons.Where(l => l.LessonId == id).FirstOrDefault();
+            if (lesson == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var userCourse = db.UserCourses.Where(c => c.CourseId == lesson.CourseId).FirstOrDefault();
+
+            if (userCourse == null || userCourse.UserId.ToString() != HttpContext.Session.GetString("Id"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            db.Lessons.Remove(lesson);
+            db.SaveChanges();
+            return RedirectToAction("ViewCourse", "Course", new { id = userCourse.CourseId });
+
+        }
+
+        // edit lesson data
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult EditData(IFormCollection f, IFormFile img, IFormFile video)
+        {
+            if (
+                  HttpContext.Session.GetString("Id") == null
+                  || HttpContext.Session.GetString("Type") == null
+                  || HttpContext.Session.GetString("Type") == "user"
+                  )
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            
+            var lesson = db.Lessons.Where(l => l.LessonId.ToString() == f["id"]).FirstOrDefault();
+            if (lesson == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var userCourse = db.UserCourses.Where(c => c.CourseId == lesson.CourseId).FirstOrDefault();
+
+            if (userCourse == null || userCourse.UserId.ToString() != HttpContext.Session.GetString("Id"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+
+            if (f["lessonName"] != "")
+            {
+                lesson.LessonName = f["lessonName"];
+            }
+
+            if (f["lessonDes"] != "")
+            {
+                lesson.LessonDescription = f["lessonDes"];
+            }
+
+            lesson.LessonUpdatedAt = DateTime.Now;
+
+            if (img != null)
+            {
+                // Check if the image file exists before deleting
+                if (System.IO.File.Exists(lesson.LessonImage))
+                {
+                    // Delete the old image file
+                    System.IO.File.Delete(lesson.LessonImage);
+                }
+
+                // edit the img
+                lesson.LessonImage = SaveImage(img);
+            }
+
+            if (video != null)
+            {
+                // Check if the video file exists before deleting
+                if (System.IO.File.Exists(lesson.LessonVideo))
+                {
+                    // Delete the old image file
+                    System.IO.File.Delete(lesson.LessonVideo);
+                }
+
+                // edit the video
+                lesson.LessonVideo = SaveVideo(video);
+            }
+
+            db.Lessons.Update(lesson);
+            db.SaveChanges();
+            return RedirectToAction("ViewCourse", "Course", new { id = userCourse.CourseId });
+        }
+
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sgomG4T5/5neXZLe/tROmdvb0ic2QiiHsjw0xihIReo=",
+  "Hash": "SVi5Wc+5Z7SSmGy6h2Gvv0krZngwljojia/1v4YuP1k=",
   "Source": "Online Learning Platform",
   "BasePath": "_content/Online Learning Platform",
   "Mode": "Default",
@@ -1649,6 +1649,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\video\\Lesson\\496c5c37-8133-486a-8c5d-64271669af0f_About Us - Google Chrome 2024-05-04 21-15-01.mp4"
+    },
+    {
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\video\\Lesson\\66a69b0c-f347-4db7-9b97-a02482f5d25c_夜に駆けるをiPhoneの着信音にしてみた【YOASOBI】.mp4",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "video/Lesson/66a69b0c-f347-4db7-9b97-a02482f5d25c_夜に駆けるをiPhoneの着信音にしてみた【YOASOBI】.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\video\\Lesson\\66a69b0c-f347-4db7-9b97-a02482f5d25c_夜に駆けるをiPhoneの着信音にしてみた【YOASOBI】.mp4"
     }
   ]
 }
