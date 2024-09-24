@@ -15,7 +15,7 @@
 .sign-in-form {
     height: 80%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     width: 90%;
     flex-direction: column;
     align-content: stretch;
@@ -24,8 +24,18 @@
 }
 
 .sign-in-form div {
-    display: grid;
-    justify-content: start;
+   display: grid;
+    justify-items: start;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in-form .types {
+    grid-template-columns: 1fr 1fr;
+}
+
+.sign-in-form input {
+    padding: 3%;
 }
 
 .sign-in-options {
@@ -34,12 +44,9 @@
 }
 
 .form-content {
-    display: flex;
     color: var(--font-color);
     height: 60%;
     width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 .labels {

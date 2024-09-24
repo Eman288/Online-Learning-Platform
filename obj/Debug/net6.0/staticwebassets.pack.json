@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\Image\\Course\\cf6700ba-240c-4b81-8391-96b2a2eb04a7_Icono de patito - Variante navaja.jpeg"
     },
     {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Lesson\\6c20b6c7-ad22-4733-8f39-c82b077bed4d_09aae335-3ef0-4da0-91b0-32466c485cef.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Lesson\\6c20b6c7-ad22-4733-8f39-c82b077bed4d_09aae335-3ef0-4da0-91b0-32466c485cef.jpeg"
+    },
+    {
       "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\Sign.css",
       "PackagePath": "staticwebassets\\css\\Sign.css"
     },
@@ -39,6 +43,10 @@
     {
       "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\lesson.css",
+      "PackagePath": "staticwebassets\\css\\lesson.css"
     },
     {
       "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\profile.css",
@@ -327,6 +335,10 @@
     {
       "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\video\\Lesson\\496c5c37-8133-486a-8c5d-64271669af0f_About Us - Google Chrome 2024-05-04 21-15-01.mp4",
+      "PackagePath": "staticwebassets\\video\\Lesson\\496c5c37-8133-486a-8c5d-64271669af0f_About Us - Google Chrome 2024-05-04 21-15-01.mp4"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Online Learning Platform.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -16,6 +16,9 @@
     .main {
         height: 90%;
     }
+    nav {
+        border-bottom: 2px solid var(--main-color);
+    }
 </style>
 
 <section class="courseProvider-details">
@@ -25,9 +28,9 @@
             <button>Create a Course</button>
         </a>
 
-        <a asp-controller="CourseProvider" asp-action="RemoveCourse">
+        @* <a asp-controller="CourseProvider" asp-action="RemoveCourse">
             <button>Remove a Course</button>
-        </a>
+        </a> *@
 
         <p class="total-details">
         </p>

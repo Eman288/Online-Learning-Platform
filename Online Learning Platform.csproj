@@ -20,6 +20,8 @@
   <ItemGroup>
     <Folder Include="Migrations\" />
     <Folder Include="wwwroot\Image\Course\" />
+    <Folder Include="wwwroot\Image\Lesson\" />
+    <Folder Include="wwwroot\video\Lesson\" />
   </ItemGroup>
 
 </Project>

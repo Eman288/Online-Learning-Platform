@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KgaGsK/9zYKu4Fvz/CKknXPluE0A5A8NbZfb212tIDM=",
+  "Hash": "sgomG4T5/5neXZLe/tROmdvb0ic2QiiHsjw0xihIReo=",
   "Source": "Online Learning Platform",
   "BasePath": "_content/Online Learning Platform",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\lesson.css",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "css/lesson.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\lesson.css"
     },
     {
       "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\profile.css",
@@ -281,6 +300,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\Course\\cf6700ba-240c-4b81-8391-96b2a2eb04a7_Icono de patito - Variante navaja.jpeg"
+    },
+    {
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Lesson\\6c20b6c7-ad22-4733-8f39-c82b077bed4d_09aae335-3ef0-4da0-91b0-32466c485cef.jpeg",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "Image/Lesson/6c20b6c7-ad22-4733-8f39-c82b077bed4d_09aae335-3ef0-4da0-91b0-32466c485cef.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\Lesson\\6c20b6c7-ad22-4733-8f39-c82b077bed4d_09aae335-3ef0-4da0-91b0-32466c485cef.jpeg"
     },
     {
       "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\add.png",
@@ -1592,6 +1630,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\video\\Lesson\\496c5c37-8133-486a-8c5d-64271669af0f_About Us - Google Chrome 2024-05-04 21-15-01.mp4",
+      "SourceId": "Online Learning Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\",
+      "BasePath": "_content/Online Learning Platform",
+      "RelativePath": "video/Lesson/496c5c37-8133-486a-8c5d-64271669af0f_About Us - Google Chrome 2024-05-04 21-15-01.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\video\\Lesson\\496c5c37-8133-486a-8c5d-64271669af0f_About Us - Google Chrome 2024-05-04 21-15-01.mp4"
     }
   ]
 }

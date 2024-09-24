@@ -186,7 +186,9 @@ namespace Online_Learning_Platform.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            ViewData["Lesson"] = course.Lessons;
+            var lessons = db.Lessons.Where(a => a.CourseId == id).ToList();
+
+            ViewData["Lessons"] = lessons;
             ViewData["Message"] = msg;
             return View(course);
         }
