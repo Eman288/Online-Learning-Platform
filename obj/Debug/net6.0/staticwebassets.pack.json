@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\Image\\Course\\0ac337d5-550a-43e5-85c2-f947c46dfa89_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg"
     },
     {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\0f33a6e5-5cb2-4d00-bb7a-d5b44bf15d60_cairo.jpg",
+      "PackagePath": "staticwebassets\\Image\\Course\\0f33a6e5-5cb2-4d00-bb7a-d5b44bf15d60_cairo.jpg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\43a1c955-966c-4129-8283-e7cdb7fce038_Graduation Duck.png",
+      "PackagePath": "staticwebassets\\Image\\Course\\43a1c955-966c-4129-8283-e7cdb7fce038_Graduation Duck.png"
+    },
+    {
       "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\76fb2629-b4ef-4157-bb38-983efa93c2d0_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg",
       "PackagePath": "staticwebassets\\Image\\Course\\76fb2629-b4ef-4157-bb38-983efa93c2d0_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg"
     },
@@ -45,12 +53,36 @@
       "PackagePath": "staticwebassets\\Image\\Course\\ecd68a49-bd16-4c62-9ce3-a57a15efe23b_♡.jpeg"
     },
     {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Lesson\\362c0110-50eb-426b-b648-174f725026d6_Cute wallpaper.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Lesson\\362c0110-50eb-426b-b648-174f725026d6_Cute wallpaper.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Lesson\\418bf8d5-6a4b-466c-a0c4-bef7293f43ad_378e1225-4057-44ee-a713-3afa70cf4497.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Lesson\\418bf8d5-6a4b-466c-a0c4-bef7293f43ad_378e1225-4057-44ee-a713-3afa70cf4497.jpeg"
+    },
+    {
       "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Lesson\\6c20b6c7-ad22-4733-8f39-c82b077bed4d_09aae335-3ef0-4da0-91b0-32466c485cef.jpeg",
       "PackagePath": "staticwebassets\\Image\\Lesson\\6c20b6c7-ad22-4733-8f39-c82b077bed4d_09aae335-3ef0-4da0-91b0-32466c485cef.jpeg"
     },
     {
       "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\User\\11760a22-375a-477e-be29-91f78d36828f_378e1225-4057-44ee-a713-3afa70cf4497.jpeg",
       "PackagePath": "staticwebassets\\Image\\User\\11760a22-375a-477e-be29-91f78d36828f_378e1225-4057-44ee-a713-3afa70cf4497.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\User\\50eb9869-33f8-488c-a477-e5ea4bc3c538_1.png",
+      "PackagePath": "staticwebassets\\Image\\User\\50eb9869-33f8-488c-a477-e5ea4bc3c538_1.png"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\User\\8b106d75-e1b6-471a-879b-bcc3c01174b1_♡.jpeg",
+      "PackagePath": "staticwebassets\\Image\\User\\8b106d75-e1b6-471a-879b-bcc3c01174b1_♡.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\User\\94b09e7d-4874-4e4a-bf9b-3e3b29dd9068_Duck.jfif",
+      "PackagePath": "staticwebassets\\Image\\User\\94b09e7d-4874-4e4a-bf9b-3e3b29dd9068_Duck.jfif"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\User\\9a900888-5496-46db-963d-2d4c7749ffc5_Duck.jfif",
+      "PackagePath": "staticwebassets\\Image\\User\\9a900888-5496-46db-963d-2d4c7749ffc5_Duck.jfif"
     },
     {
       "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\User\\9bbfbd39-075b-42a4-a919-a7ea2bfac81f_378e1225-4057-44ee-a713-3afa70cf4497.jpeg",
@@ -371,6 +403,10 @@
     {
       "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\video\\Lesson\\330ab4ad-9bcd-4fd5-a50b-7dab1088d420_About Us - Google Chrome 2024-05-04 21-15-01.mp4",
+      "PackagePath": "staticwebassets\\video\\Lesson\\330ab4ad-9bcd-4fd5-a50b-7dab1088d420_About Us - Google Chrome 2024-05-04 21-15-01.mp4"
     },
     {
       "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\video\\Lesson\\496c5c37-8133-486a-8c5d-64271669af0f_About Us - Google Chrome 2024-05-04 21-15-01.mp4",

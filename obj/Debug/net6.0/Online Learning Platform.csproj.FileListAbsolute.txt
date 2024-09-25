@@ -138,3 +138,8 @@ M:\ooo\Online-Learning-Platform\obj\Debug\net6.0\refint\Online Learning Platform
 M:\ooo\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.pdb
 M:\ooo\Online-Learning-Platform\obj\Debug\net6.0\Online Learning Platform.genruntimeconfig.cache
 M:\ooo\Online-Learning-Platform\obj\Debug\net6.0\ref\Online Learning Platform.dll
+M:\ooo\Online-Learning-Platform\bin\Debug\net6.0\out\web.config
+M:\ooo\Online-Learning-Platform\bin\Debug\net6.0\out\appsettings.Development.json
+M:\ooo\Online-Learning-Platform\bin\Debug\net6.0\out\appsettings.json
+M:\ooo\Online-Learning-Platform\bin\Debug\net6.0\out\Online Learning Platform.deps.json
+M:\ooo\Online-Learning-Platform\bin\Debug\net6.0\out\Online Learning Platform.runtimeconfig.json
