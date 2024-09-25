@@ -1,0 +1,165 @@
+:root {
+    --main-color: #1D2649;
+    --second-main-color: #E42A6B;
+    --second-font-color: #BEC9EC;
+    --font-color: #EFF0F3;
+}
+
+
+
+body {
+    --sb-track-color: #1d2649;
+    --sb-thumb-color: #e42a6b;
+    --sb-size: 14px;
+}
+
+    body::-webkit-scrollbar {
+        width: var(--sb-size)
+    }
+
+    body::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 3px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 3px;
+    }
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+
+
+
+*{
+    transition: all .5s;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(../img/homePage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    height: 10%;
+}
+
+nav {
+    height: 100%;
+    margin: 0 !important;
+    background-color: var(--font-color);
+}
+
+.main {
+    height: 80%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+main {
+    height: 100%;
+}
+
+
+
+/*nav style*/
+
+nav a {
+    color: var(--main-color) !important;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+nav a:hover {
+    color: var(--second-main-color) !important;
+}
+
+.buttons {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buttons button {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 2%;
+    padding: 3%;
+    font-size: 1.3vw;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.sign-up {
+    background-color: var(--second-main-color);
+}
+
+.sign-up a {
+     color: var(--main-color);
+}
+
+.sign-up:hover {
+    background-color: var(--main-color);
+}
+
+.sign-up:hover a {
+    color: var(--second-main-color); 
+}
+
+.sign-in {
+    background-color: transparent;
+}
+
+.sign-in a { 
+    color: var(--font-color);
+}
+
+.sign-in:hover {
+    background-color: var(--main-color);
+   color: var(--second-main-color);
+
+}
+
+a .sign-in:hover {
+    color: var(--second-main-color);
+}
+/*footer*/
+footer {
+    background-color: transparent;
+    height: 10%;
+    padding: 10px 5%;
+    color: var(--font-color) !important;
+    border: 0 !important;
+}
+
+.footer a  {
+    text-decoration: none;
+    color: var(--font-color);
+}

@@ -1,0 +1,111 @@
+﻿:root {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "GRAD" 0;
+}
+
+.home span {
+    padding: 0 10px
+}
+
+.typing-effect {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #e42a6b !important;
+    display: inline-block;
+    animation: typing 3s steps(15, end) forwards, blink-caret 0.75s step-end infinite;
+}
+/* Typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+    /* Adjust based on the length of your text */
+}
+
+/* Blink caret effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+/* Bounce effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite ease-in-out;
+}
+
+
+
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+
+/*home-text*/
+.home-text {
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-text h1 {
+    color: var(--font-color);
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.home-text p {
+        color: #aa84b1;
+    font-size: 1vw;
+    max-width: 60%;
+}
+
+.home-text button {
+    background-color: var(--second-main-color);
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--main-color);
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.home-text button:hover {
+    background-color: var(--main-color);
+    color: var(--second-main-color);
+}

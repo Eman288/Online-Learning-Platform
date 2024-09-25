@@ -1,0 +1,401 @@
+{
+  "Files": [
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Online Learning Platform.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Online Learning Platform.bundle.scp.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\00fc1459-6a62-4e44-920c-9f0e15ab9ca2_cairo.jpg",
+      "PackagePath": "staticwebassets\\Image\\Course\\00fc1459-6a62-4e44-920c-9f0e15ab9ca2_cairo.jpg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\05d3cb85-45cf-4c96-bc25-156fedc14e93_Icono de patito - Variante Corazon.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\05d3cb85-45cf-4c96-bc25-156fedc14e93_Icono de patito - Variante Corazon.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\0ac337d5-550a-43e5-85c2-f947c46dfa89_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\0ac337d5-550a-43e5-85c2-f947c46dfa89_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\76fb2629-b4ef-4157-bb38-983efa93c2d0_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\76fb2629-b4ef-4157-bb38-983efa93c2d0_Dömande anka poster av Ciucinciu Tiberius - Printler.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\9a858a74-aa9b-4904-9079-c6dd41e0f31e_942ba781-90bd-4166-bcda-d9f143908c58.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\9a858a74-aa9b-4904-9079-c6dd41e0f31e_942ba781-90bd-4166-bcda-d9f143908c58.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\b7358888-0547-4f94-8b51-6eedf535e713_fa4f40d2-0f24-4bab-9f9d-6432c41134e2.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\b7358888-0547-4f94-8b51-6eedf535e713_fa4f40d2-0f24-4bab-9f9d-6432c41134e2.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\c6affee9-2dfb-472e-ac02-2b64dda0179c_Icono de patito - Variante Corazon.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\c6affee9-2dfb-472e-ac02-2b64dda0179c_Icono de patito - Variante Corazon.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\cf6700ba-240c-4b81-8391-96b2a2eb04a7_Icono de patito - Variante navaja.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\cf6700ba-240c-4b81-8391-96b2a2eb04a7_Icono de patito - Variante navaja.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\e9e0f943-33e8-46c8-8f22-42ce48732301_53987c50-d087-4f5a-ad86-c60a3bef94df.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\e9e0f943-33e8-46c8-8f22-42ce48732301_53987c50-d087-4f5a-ad86-c60a3bef94df.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Course\\ecd68a49-bd16-4c62-9ce3-a57a15efe23b_♡.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Course\\ecd68a49-bd16-4c62-9ce3-a57a15efe23b_♡.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\Lesson\\6c20b6c7-ad22-4733-8f39-c82b077bed4d_09aae335-3ef0-4da0-91b0-32466c485cef.jpeg",
+      "PackagePath": "staticwebassets\\Image\\Lesson\\6c20b6c7-ad22-4733-8f39-c82b077bed4d_09aae335-3ef0-4da0-91b0-32466c485cef.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\User\\11760a22-375a-477e-be29-91f78d36828f_378e1225-4057-44ee-a713-3afa70cf4497.jpeg",
+      "PackagePath": "staticwebassets\\Image\\User\\11760a22-375a-477e-be29-91f78d36828f_378e1225-4057-44ee-a713-3afa70cf4497.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\User\\9bbfbd39-075b-42a4-a919-a7ea2bfac81f_378e1225-4057-44ee-a713-3afa70cf4497.jpeg",
+      "PackagePath": "staticwebassets\\Image\\User\\9bbfbd39-075b-42a4-a919-a7ea2bfac81f_378e1225-4057-44ee-a713-3afa70cf4497.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\User\\d45f1545-c455-4414-99d0-24b8dbc1b05f_♡.jpeg",
+      "PackagePath": "staticwebassets\\Image\\User\\d45f1545-c455-4414-99d0-24b8dbc1b05f_♡.jpeg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\Image\\User\\e992dfae-d8c8-4eb6-8de1-70b4673d1d8e_all lights.jpg",
+      "PackagePath": "staticwebassets\\Image\\User\\e992dfae-d8c8-4eb6-8de1-70b4673d1d8e_all lights.jpg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\Sign.css",
+      "PackagePath": "staticwebassets\\css\\Sign.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\course.css",
+      "PackagePath": "staticwebassets\\css\\course.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\lesson.css",
+      "PackagePath": "staticwebassets\\css\\lesson.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\add.png",
+      "PackagePath": "staticwebassets\\img\\add.png"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\delete.png",
+      "PackagePath": "staticwebassets\\img\\delete.png"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\edit.png",
+      "PackagePath": "staticwebassets\\img\\edit.png"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\home.jpg",
+      "PackagePath": "staticwebassets\\img\\home.jpg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\home.png",
+      "PackagePath": "staticwebassets\\img\\home.png"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\homePage.jpg",
+      "PackagePath": "staticwebassets\\img\\homePage.jpg"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\homepic.png",
+      "PackagePath": "staticwebassets\\img\\homepic.png"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\noCourseImg.png",
+      "PackagePath": "staticwebassets\\img\\noCourseImg.png"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\profile.png",
+      "PackagePath": "staticwebassets\\img\\profile.png"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\video\\Lesson\\496c5c37-8133-486a-8c5d-64271669af0f_About Us - Google Chrome 2024-05-04 21-15-01.mp4",
+      "PackagePath": "staticwebassets\\video\\Lesson\\496c5c37-8133-486a-8c5d-64271669af0f_About Us - Google Chrome 2024-05-04 21-15-01.mp4"
+    },
+    {
+      "Id": "M:\\ooo\\Online-Learning-Platform\\wwwroot\\video\\Lesson\\66a69b0c-f347-4db7-9b97-a02482f5d25c_夜に駆けるをiPhoneの着信音にしてみた【YOASOBI】.mp4",
+      "PackagePath": "staticwebassets\\video\\Lesson\\66a69b0c-f347-4db7-9b97-a02482f5d25c_夜に駆けるをiPhoneの着信音にしてみた【YOASOBI】.mp4"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.Online Learning Platform.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.Online Learning Platform.props",
+      "PackagePath": "build\\Online Learning Platform.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Online Learning Platform.props",
+      "PackagePath": "buildMultiTargeting\\Online Learning Platform.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.Online Learning Platform.props",
+      "PackagePath": "buildTransitive\\Online Learning Platform.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
