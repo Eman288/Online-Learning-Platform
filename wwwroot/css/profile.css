@@ -159,7 +159,7 @@
 
 .edit-data-block {
     height: 100%;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0a8;
     box-shadow: 4px 4px var(--main-color) inset;
     border: 3px solid var(--second-main-color);
     padding: 5%;
@@ -170,7 +170,7 @@
 .edit-data-form {
     height: 100%;
     width: 70%;
-    background-color: var(--second-main-color);
+    background-color: #e42a6b47;
     border: 3px solid var(--main-color);
     border-radius: 10px;
     display: grid;

@@ -47,12 +47,12 @@
 
         <div>
             <label for="img">Image</label>
-            <input class="input" id="img" type="file" accept="image/*" />
+            <input class="input" id="img" name="img" type="file" accept="image/*" />
         </div>
 
         <div>
             <label for="birthday">Birthday</label>
-            <input class="input" id="birthday" type="date" required asp-for="UserBirthday" />
+            <input class="input" id="birthday" type="date" required asp-for="UserBirthday" min="1950-01-01" max="@DateTime.Today.ToString("yyyy-MM-dd")" />
             <span asp-validation-for="UserBirthday" class="text-danger"></span>
         </div>
 

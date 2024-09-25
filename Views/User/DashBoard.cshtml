@@ -2,27 +2,122 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    var numCourses = (int)ViewData["numCourses"];
 }
 
-<div class="progress-circle">
-    <svg>
-        <circle class="background" cx="80" cy="80" r="70"></circle>
-        <circle class="progress" cx="80" cy="80" r="70"></circle>
-    </svg>
-    <div class="progress-number">65%</div>
-</div>
+<style>
+    footer {
+        display: none;
+    }
 
-<sctipt>
-    /*animation script*/
-    const progressCircle = document.querySelector('.progress');
-    const percentage = 65;  // The percentage you want to show
-    const totalLength = 440; // Total length of the circle's circumference
-    const offset = totalLength - (totalLength * percentage / 100);  // Calculate stroke-dashoffset value
+    .main {
+        height: 90%;
+    }
 
-    // Apply animation after a delay to allow the transition to be visible
-    setTimeout(() => {
-    progressCircle.style.strokeDashoffset = offset;
-    }, 100);  // 100ms delay to trigger the animation
+    nav {
+        border-bottom: 2px solid var(--main-color);
+    }
 
+    /* Progress circle styling */
+    .progress-circle {
+        position: relative;
+        width: 160px;
+        height: 160px;
+    }
 
-</sctipt>
+    .progress-circle svg {
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+    }
+
+    .progress-circle circle {
+        fill: none;
+        stroke-width: 15;
+        stroke-linecap: round;
+    }
+
+    .progress-circle .background {
+        stroke: #e6e6e6;
+    }
+
+    .progress-circle .progress {
+        stroke: #673ab7;
+        stroke-dasharray: 440; /* Circumference of the circle */
+        stroke-dashoffset: 440; /* Initially set to hide the progress */
+        transition: stroke-dashoffset 1s ease-in-out; /* Animate progress */
+    }
+
+    .progress-number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        font-weight: bold;
+        color: #333;
+    }
+
+  
+</style>
+
+<section class="courseProvider-details">
+
+    <aside>
+        <a onclick="CourseResult()">
+            <button>Course Results</button>
+        </a>
+
+        @* <a asp-controller="CourseProvider" asp-action="RemoveCourse">
+        <button>Remove a Course</button>
+        </a> *@
+
+        <p class="total-details">
+            You Have joined 0 Courses in Total
+        </p>
+    </aside>
+
+    <div class="details">
+        <div>
+            <div class="best-courses-details" style="margin-top: 10%;">
+                <h4>Best Courses</h4>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="rate">
+            <div class="progress-circle">
+                <svg>
+                    <circle class="background" cx="80" cy="80" r="70"></circle>
+                    <circle class="progress" cx="80" cy="80" r="70"></circle>
+                </svg>
+                <div class="progress-number">65%</div>
+            </div>
+
+            <a asp-controller="User" asp-action="ViewMyCourses">
+                <button>View Details</button>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    window.onload = function () {
+        document.querySelector('.total-details').innerHTML = `You Have Joined ${@Html.Raw(numCourses)} Courses in Total`;
+        
+        // Animation script for progress circle
+        const progressCircle = document.querySelector('.progress');
+        const percentage = 65;  // The percentage you want to show
+        const totalLength = 440; // Total length of the circle's circumference
+        const offset = totalLength - (totalLength * percentage / 100);  // Calculate stroke-dashoffset value
+
+        // Set initial dashoffset to hide progress
+        progressCircle.style.strokeDashoffset = totalLength;
+
+        // Apply animation after a short delay to trigger the transition
+        setTimeout(() => {
+            progressCircle.style.strokeDashoffset = offset;
+        }, 200);  // 200ms delay to trigger the animation
+    }
+</script>

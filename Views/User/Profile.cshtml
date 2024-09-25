@@ -24,7 +24,9 @@
         <a asp-controller="User" asp-action="DashBoard">My Dashboard</a>
         @if (ViewContext.HttpContext.Session.GetString("Type") == "user")
         {
-            <a href="#">Courses</a>
+            <a asp-controller="User" asp-action="ViewMyCourses">
+                Courses
+            </a>
         }
         else
         {
@@ -44,7 +46,7 @@
                 <img src="~/img/edit.png" />
             </a>
             <div>
-                <img src="~/img/user.png" alt="error" />
+                <img src="@Model.UserImage" alt="error" />
                 <div>
                     <h3>@Model.UserName</h3>
                     <p>@Model.UserBirthday</p>

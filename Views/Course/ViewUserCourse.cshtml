@@ -1,0 +1,179 @@
+﻿@model Online_Learning_Platform.Models.Course
+
+@* For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860 *@
+@using Newtonsoft.Json;
+
+@{
+    var lessonData = ViewData["Lessons"] as List<Lesson> ?? new List<Lesson>();
+    var LessonJson = JsonConvert.SerializeObject(lessonData, new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            });
+    var check = (int)ViewData["check"]; // 0 is not booked, 1 booked
+}
+
+<head>
+    <style>
+        footer {
+            display: none;
+        }
+
+        .main {
+            height: 90%;
+        }
+
+        /* course edit */
+        .save-edit-course, .save-edit-lesson {
+            display: none;
+        }
+
+        .lesson-details {
+            display:none;
+        }
+    </style>
+</head>
+
+<section class="course-block">
+    <div class="lessons-area">
+        <div class="lesson-tools">
+            <p onclick="showCourseDetails()">@Model.CourseName</p>
+        </div>
+
+        <div class="lessons">
+            <!-- Lessons will appear here -->
+        </div>
+    </div>
+
+    <div class="course-User-details">
+
+        <div style="grid-column: 1/3;">
+                <input id="id" name="id" value="@Model.CourseId" asp-for="CourseId" readonly hidden />
+
+                <div class="course-name">
+                    <h3>Course Name</h3>
+                    <p>@Model.CourseName</p>
+                </div>
+
+                <div class="course-des">
+                    <h3>Course Description</h3>
+                    <p>@Model.CourseDescription</p>
+                </div>
+
+                <img src="@Model.CourseImage" alt="courseImage" />
+                @if (check == 0)
+                {
+                    <a onclick="bookCheck(@Model.CourseId)">
+                        <button class="book-course">Book</button>
+                    </a>
+                }
+        </div>
+    </div>
+
+
+
+
+
+    <div class="lesson-User-details">
+       // lesson details show here
+    </div>
+
+</section>
+
+<script>
+    let currentLesson = 0;
+
+    let courseDetails = document.querySelector('.course-User-details');
+    let lessonDetails = document.querySelector('.lesson-User-details');
+
+    const lessons = @Html.Raw(LessonJson);
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        lessonDetails.style.display = "none"; // hide the lesson details area on load
+        if (lessons.length === 0) {
+            document.querySelector('.lessons').innerHTML = 'No Lessons here';
+        } else {
+            let i = 1;
+            lessons.forEach((element) => {
+                viewLesson(element.LessonId, element.LessonName, i);
+                i++;
+            });
+        }
+    });
+
+
+    // Function to create the lesson div
+    function viewLesson(id, name, inx) {
+        let lessonDiv = document.createElement('div');
+        lessonDiv.className = "lesson-item"; // Add a CSS class for styling
+        lessonDiv.innerHTML = `<strong>Lesson ${inx}: </strong>${name}`;
+        lessonDiv.onclick = () => ViewLessonDetailsUser(inx - 1); // Correct reference
+        document.querySelector('.lessons').appendChild(lessonDiv);
+    }
+
+
+    // view course details
+    function showCourseDetails(){
+        courseDetails.style.display = "grid";
+        lessonDetails.style.display = "none";
+    }
+
+    // view lesson details 
+    function ViewLessonDetailsUser(inx) {
+        if (@Html.Raw(check) == 1) {
+            courseDetails.style.display = "none";
+            lessonDetails.style.display = "grid";
+
+            let lesson = lessons[inx];
+
+            // displaying the lesson details
+            lessonDetails.innerHTML = `
+                <div>
+
+                        <div class="lesson-name">
+                            <h3>Lesson Name</h3>
+                            <p>${lesson.LessonName}</p>
+                        </div>
+
+                        <div class="lesson-des">
+                                <h3>Lesson Description</h3>
+                             <p>${lesson.LessonDescription}</p>
+                        </div>
+
+
+                         <div class="lesson-video">
+                               ${lesson.LessonVideo ?
+                    `<video controls poster="${lesson.LessonImage}">
+                                        <source src="${lesson.LessonVideo}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>` :
+                    `<img src="${lesson.LessonImage}" alt="lesson image" />`
+                }
+                         </div>
+
+                </div>
+            `;
+        }
+        else
+        {
+            alert("You Must Book the Course to View the Lessons");
+        }
+        
+    }
+
+    function bookCheck(id) {
+        // Check session status to make sure the user is logged in
+        if ('@ViewContext.HttpContext.Session.GetString("Id")' === '' || '@ViewContext.HttpContext.Session.GetString("Type")' === '') {
+            alert("You need to sign in first to book.");
+        }
+        else if ('@ViewContext.HttpContext.Session.GetString("Type")' !== 'user') {
+            alert("Course providers can't book courses. Please sign in with your user account.");
+        }
+        else {
+            // Redirect to the BookCourse action with courseId
+            window.location.href = `/Course/BookCourse/${id}`;
+        }
+    }
+
+</script>

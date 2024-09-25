@@ -1,0 +1,68 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using Newtonsoft.Json;
+
+@{
+    var courses = (List<Course>)ViewData["courses"];
+    // to convert the list into something the javascript can understand
+    var coursesJson = JsonConvert.SerializeObject(courses);
+}
+
+<head>
+    <style>
+        .main {
+            height: 90%;
+        }
+        
+        footer {
+            display: none;
+        }
+        nav {
+            border-bottom: 2px solid var(--main-color);
+        }
+
+    </style>
+</head>
+
+
+<div class="fluid-container" style="background-image: linear-gradient(235deg, var(--font-color), #d9dbdf);">
+    <section class="my-courses row">
+        <!--courses will appear here-->
+    </section>
+</div>
+
+<script>
+    const courses = @Html.Raw(coursesJson);
+
+    window.onload = function () {
+        courses.forEach((element) => {
+            CreateCourseBlock(element.CourseId, element.CourseName, element.CourseDescription, element.CourseImage);
+        });
+
+        function CreateCourseBlock(id, name, des, image) {
+
+            // creating course div
+            let course = document.createElement('div');
+            course.id = id;
+            course.className = "col-lg-3 col-sm-6";
+
+            // adding the data in the course
+            course.innerHTML = `
+                    <img src="${image}" alt="error"/>
+                    <div class="text">
+                        <h3>${name}</h3>
+                        <p>${des}</p>
+                    </div>
+              
+
+                        <a href="https://localhost:44377/Course/ViewUserCourse?id=${id}">
+                        <button>View</button>
+                    </a>
+                `;
+
+            // appending the div into the courses
+            document.querySelector('.my-courses').appendChild(course);
+        }
+    }
+</script>

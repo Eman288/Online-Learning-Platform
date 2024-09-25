@@ -80,8 +80,8 @@ namespace Online_Learning_Platform.Controllers
             }
 
             // add the course into the database
-           
 
+            NewCourse.UserCourses = new List<UserCourse>();
             db.Courses.Add(NewCourse);
             db.SaveChanges();
 
@@ -112,6 +112,7 @@ namespace Online_Learning_Platform.Controllers
 
             UserCourse.CourseId = NewCourse.CourseId;
             UserCourse.Course = NewCourse;
+            
 
             db.UserCourses.Add(UserCourse);
             db.SaveChanges();
@@ -223,6 +224,8 @@ namespace Online_Learning_Platform.Controllers
             return "/Image/Course/" + uniqueFileName;
         }
 
+        // edit course data
+
         [HttpPost]
         public IActionResult EditData(IFormCollection f, IFormFile courseImage)
         {
@@ -304,6 +307,8 @@ namespace Online_Learning_Platform.Controllers
             return Ok();
         }
 
+        //delete a course after getting the permission
+        
         [HttpPost]
         public IActionResult DeleteCourse(int Id)
         {
@@ -342,6 +347,103 @@ namespace Online_Learning_Platform.Controllers
             db.SaveChanges();
 
             return RedirectToAction("ViewMyCourses");
+        }
+
+
+        // show all the courses in the main course page
+        [HttpGet]
+        public IActionResult ShowAllCourses(int page)
+        {
+            if (page <= 0)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            // page => 1
+            // courses from row 0 to 11
+            // page => 2
+            // courses from  row 12 to 23 and so on every 12 rows in each page
+            var records = db.Courses
+                       .OrderBy(c => c.CourseId)  // Assuming CourseId is the column to order by
+                       .Skip((page - 1) * 12)  //Skip (a-1) rows (a is 1-based, LINQ is 0-based)
+                       .Take(12)  //// Take 12 rows from 
+                       .ToList();
+
+            ViewData["courses"] = records;
+            return View();
+        }
+
+        // show the course in the user view and the not signed user view
+        [HttpGet]
+        public IActionResult ViewUserCourse(int id)
+        {
+            var course = db.UserCourses.Where(a => a.CourseId == id).FirstOrDefault();
+            if (course == null)
+            {
+                return RedirectToAction("ShowAllCourses", 1);
+            }
+            if (HttpContext.Session.GetString("Id") != "null" && HttpContext.Session.GetString("Id") == course.UserId.ToString())
+            {
+                // if it is the creator of the course, return the viewCourse view for the coure provider
+                return RedirectToAction("ViewCourse", "Course", new {id = id});
+            }
+            var c = db.Courses.Where(c => c.CourseId == id).FirstOrDefault();
+            var lessons = db.Lessons.Where(a => a.CourseId == id).ToList();
+            int check = 1;
+            ViewData["Lessons"] = lessons;
+            if (HttpContext.Session.GetString("Id") == null || HttpContext.Session.GetString("Type") != "user") 
+            {
+                check = 0;
+            }
+            else
+            {
+                if (db.UserCourses.Where(a => a.CourseId == id && a.UserId.ToString() == HttpContext.Session.GetString("Id")).FirstOrDefault() != null)
+                {
+                    check = 1;
+                }
+                else
+                {
+                    check = 0;
+                }
+            }
+            ViewData["check"] = check;
+            return View(c);
+        }
+
+        [HttpGet("Course/BookCourse/{courseId}")]
+        // a function to book a course if it was a user
+        public IActionResult BookCourse(int courseId)
+        {
+            if (
+                HttpContext.Session.GetString("Id") == null
+                || HttpContext.Session.GetString("Type") == null
+                || HttpContext.Session.GetString("Type") != "user"
+            )
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var user = db.Users.Where(u => u.UserId.ToString() == HttpContext.Session.GetString("Id")).FirstOrDefault();
+            var course = db.Courses.Where(c => c.CourseId == courseId).FirstOrDefault();
+
+            var usercourse = new UserCourse();
+
+            usercourse.Course = course;
+            usercourse.User = user;
+            usercourse.UserId = user.UserId;
+            usercourse.CourseId = course.CourseId;
+
+
+            db.UserCourses.Add(usercourse);
+            user.UserCourses.Add(usercourse);
+            course.UserCourses.Add(usercourse);
+            db.Users.Update(user);
+            db.Courses.Update(course);
+
+            db.SaveChanges();
+
+
+            return RedirectToAction("ViewUserCourse", new { id = courseId });
         }
 
     }

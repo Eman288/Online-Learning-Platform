@@ -288,7 +288,7 @@ svg {
     font-size: 2em;
 }
 
-.progress-circle {
+/*.progress-circle {
     position: relative;
     width: 160px;
     height: 160px;
@@ -339,8 +339,8 @@ svg {
 }
 @keyframes anim {
     100% {
-        stroke-dashoffset: 165; /* making the circle move to the wanted percentage */
-    }
+        stroke-dashoffset: 165;*/ /* making the circle move to the wanted percentage */
+    /*}
 }
 
 @media (max-width: 600px) {
@@ -358,4 +358,4 @@ svg {
         width: 60vw;
         height: 60vw;
     }
-}
+}*/

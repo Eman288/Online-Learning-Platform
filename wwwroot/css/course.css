@@ -155,17 +155,17 @@
     height: 100%;
 }
 
-.course-details *, .lesson-details *{
+.course-details *, .lesson-details *, .course-User-details h3{
     font-size: 1.2vw;
 }
 
-.course-details form input, .course-details form textarea {
+.course-details form input, .course-details form textarea, .course-User-details p {
     font-size: 1vw;
 }
 
 .course-details > div {
-display: grid;
-gap: 5%;
+    display: grid;
+    gap: 5%;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-template-rows: 70% 20%;
@@ -288,5 +288,164 @@ textarea::-webkit-scrollbar-thumb {
 @supports not selector(::-webkit-scrollbar) {
     * {
         scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+/*showALLCoueses Design*/
+
+.showAll {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.showAll aside {
+    background-color: var(--second-main-color);
+    padding: 5%;
+    border-right: 3px solid var(--main-color);
+}
+
+.showAll .all-courses {
+    padding: 5%;
+    background-color: var(--font-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.showAll .all-courses > div 
+{
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px solid #bec9ec42;
+    margin: 0 0 3% 3%;
+    height: 20vw;
+    box-shadow: 2px 2px 2px var(--second-font-color);
+    width: calc((90% - 12%) / 3);
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: grid;
+    padding: 1%;
+    grid-template-rows: 50% 30% 20%;
+}
+
+.all-courses > div:hover {
+       box-shadow: 2px 2px 2px var(--second-main-color);
+} 
+
+
+.all-courses > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.all-courses > div h3 {
+    color: var(--second-main-color);
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.all-courses > div p {
+    color: var(--main-color);
+    font-size: 60%;
+}
+
+
+.all-courses button {
+    background-color: var(--second-main-color);
+    /* padding: 2%; */
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    color: var(--font-color);
+    font-weight: bold;
+    box-shadow: 2px 2px 0px var(--main-color);
+}
+
+/*course user page*/
+
+.course-User-details {
+    display: grid;
+    background-color: var(--font-color);
+    padding: 1% 5%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90%;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.course-User-details > div {
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-rows: 20% 50% 20%;
+}
+
+.course-User-details img {
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-User-details h3 {
+    color: var(--second-main-color);
+}
+
+.course-User-details button {
+    width: 50%;
+    /* height: 80%; */
+    padding: 3%;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--second-main-color);
+    box-shadow: 2px 2px 2px var(--second-font-color);
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.course-User-details button:hover {
+    background-color: var(--second-font-color);
+    box-shadow: 2px 2px 2px var(--second-main-color);
+}
+
+/*lesson details for user*/
+
+.lesson-User-details {
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 100%;
+    padding: 1% 5%;
+    background-color: var(--font-color);
+    grid-template-rows: 90%;
+}
+
+.lesson-User-details > div {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 60%;
+}
+
+.lesson-details > div > div h3 {
+    color: var(--second-main-color);
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.lesson-details > div > div p {
+    color: var(--main-color);
+    font-size: 1vw;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    .progress-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .progress-number {
+        font-size: 1.5em;
     }
 }

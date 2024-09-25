@@ -14,9 +14,9 @@
 
     if (msg == 0)
     {
-            <script>
-                alert("Can't Delete the Course, There are Users Assigned to It");
-            </script>
+        <script>
+            alert("Can't Delete the Course, There are Users Assigned to It");
+        </script>
     }
 }
 
@@ -36,7 +36,7 @@
         }
 
         .lesson-details {
-            display:none;
+            display: none;
         }
     </style>
 </head>
@@ -93,7 +93,7 @@
 
 
     <div class="lesson-details">
-       // lesson details show here
+        // lesson details show here
     </div>
 
 
@@ -103,7 +103,7 @@
         <h4>Lesson Creation</h4>
 
         <form asp-controller="Lesson" asp-action="CreateLesson" method="post" enctype="multipart/form-data">
-            
+
             <input type="number" value="@Model.CourseId" name="courseId" id="CourseId" hidden readonly />
             <div>
                 <label for="LessonName">Lesson Name</label>
@@ -218,66 +218,66 @@
     }
 
     // view course details
-    function showCourseDetails(){
+    function showCourseDetails() {
         courseDetails.style.display = "grid";
         lessonDetails.style.display = "none";
     }
 
-    // view lesson details 
+    // view lesson details
     function ViewLessonDetails(inx) {
         courseDetails.style.display = "none";
         lessonDetails.style.display = "grid";
-        
+
         let lesson = lessons[inx];
 
         // displaying the lesson details
         lessonDetails.innerHTML = `
-                 <a onclick="DeleteLesson(${lesson.LessonId})" style="text-align: start">
-                <img src="/img/delete.png" alt="delete" />
-            </a>
+                     <a onclick="DeleteLesson(${lesson.LessonId})" style="text-align: start">
+                    <img src="/img/delete.png" alt="delete" />
+                </a>
 
-            <a onclick="EditLesson()" style="text-align:end;">
-                <img src="/img/edit.png" alt="edit" />
-            </a>
+                <a onclick="EditLesson()" style="text-align:end;">
+                    <img src="/img/edit.png" alt="edit" />
+                </a>
 
-            <div style="grid-column: 1 / 3;">
-                    <form action="/Lesson/EditData" method="post" enctype="multipart/form-data">
-                        <input id="id" name="id" value="${lesson.LessonId}" readonly hidden />
+                <div style="grid-column: 1 / 3;">
+                        <form action="/Lesson/EditData" method="post" enctype="multipart/form-data">
+                            <input id="id" name="id" value="${lesson.LessonId}" readonly hidden />
 
-                    <div class="lesson-name">
-                        <label for="lessonName">Course Name</label>
-                        <input id="lessonName" name="lessonName" type="text" maxlength="50" required value="${lesson.LessonName}" readonly />
-                    </div>
-
-                    <div class="lesson-des">
-                        <label for="lessonDes">Course Description</label>
-                         <textarea id="lessonDes" name="lessonDes" maxlength="250" required readonly>${lesson.LessonDescription}</textarea>
-                    </div>
-
-                    <div class="video">
-                        <label for="lessonVideo">Course Video</label>
-                        <input id="lessonVideo" name="video" type="file" accept="video/*" />
-                    </div>
-
-                        <div class="image">
-                            <label for="lessonImage">Course Image</label>
-                            <input id="lessonImage" name="img" type="file" accept="image/*" />
+                        <div class="lesson-name">
+                                <label for="lessonName">Lesson Name</label>
+                            <input id="lessonName" name="lessonName" type="text" maxlength="50" required value="${lesson.LessonName}" readonly />
                         </div>
 
-                     <div class="lesson-video">
-                           ${lesson.LessonVideo ?
-                            `<video controls poster="${lesson.LessonImage}">
-                                    <source src="${lesson.LessonVideo}" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>` :
-                            `<img src="${lesson.LessonImage}" alt="lesson image" />`
-            }
-                     </div>
+                        <div class="lesson-des">
+                            <label for="lessonDes">Lesson Description</label>
+                             <textarea id="lessonDes" name="lessonDes" maxlength="250" required readonly>${lesson.LessonDescription}</textarea>
+                        </div>
 
-                    <button class="save-edit-lesson" type="submit">Save</button>
-                </form>
-            </div>
-        `;
+                        <div class="video">
+                            <label for="lessonVideo">Lesson Video</label>
+                            <input id="lessonVideo" name="video" type="file" accept="video/*" />
+                        </div>
+
+                            <div class="image">
+                                <label for="lessonImage">Lesson Image</label>
+                                <input id="lessonImage" name="img" type="file" accept="image/*" />
+                            </div>
+
+                         <div class="lesson-video">
+                               ${lesson.LessonVideo ?
+                `<video controls poster="${lesson.LessonImage}">
+                                        <source src="${lesson.LessonVideo}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>` :
+                `<img src="${lesson.LessonImage}" alt="lesson image" />`
+            }
+                         </div>
+
+                        <button class="save-edit-lesson" type="submit">Save</button>
+                    </form>
+                </div>
+            `;
     }
 
     function EditLesson() {
@@ -314,3 +314,4 @@
         }
     }
 </script>
+

@@ -1,0 +1,80 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using Newtonsoft.Json;
+
+@{
+    var courses = ViewData["courses"] as List<Course> ?? new List<Course>();
+    var coursesJson = JsonConvert.SerializeObject(courses, new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            });
+}
+
+<head>
+    <style>
+        footer {
+            display: none;
+        }
+
+        .main {
+            height: 90%;
+        }
+    </style>
+</head>
+
+
+<section class="showAll">
+
+    <aside>
+        <div></div>
+        <div></div>
+        <div></div>
+    </aside>
+
+    <div class="all-courses">
+        <!--courses will appear here-->
+    </div>
+
+</section>
+
+<script>
+    let courses = @Html.Raw(coursesJson);
+    let parent = document.querySelector('.all-courses');
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (courses.length === 0) {
+            parent.innerHTML = 'No courses here';
+        } else {
+            courses.forEach((course) => {
+                CreateCourseDiv(course.CourseId, course.CourseName, course.CourseDescription, course.CourseImage);
+            });
+        }
+    });
+
+    function CreateCourseDiv(id, name, des, image) {
+
+        // creating course div
+        let course = document.createElement('div');
+        course.id = id;
+        course.className = "col-lg-3 col-sm-6";
+
+        // adding the data in the course
+        course.innerHTML = `
+                        <img src="${image}" alt="error"/>
+                        <div class="text">
+                            <h3>${name}</h3>
+                            <p>${des}</p>
+                        </div>
+
+
+                        <a href="https://localhost:44377/Course/ViewUserCourse?id=${id}">
+                            <button>View</button>
+                        </a>
+                    `;
+
+        // appending the div into the courses
+        parent.appendChild(course);
+    }
+</script>

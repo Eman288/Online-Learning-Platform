@@ -60,7 +60,7 @@ namespace Online_Learning_Platform.Controllers
             return true;
         }
         [NonAction]
-        public bool ConfUser(User u, IFormCollection f, IFormFile i, out int wentWrong)
+        public bool ConfUser(User u, IFormCollection f, out int wentWrong)
         { 
 
 
@@ -111,14 +111,43 @@ namespace Online_Learning_Platform.Controllers
             return true;
         }
 
+        // a function to save an img for a user
+        [NonAction]
+        private string SaveImage(IFormFile img)
+        {
+            // Generate a unique file name to prevent overwriting
+            var fileName = Path.GetFileName(img.FileName);
+            var uniqueFileName = Guid.NewGuid().ToString() + "_" + fileName;
+
+            // Set the correct path to save the image
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Image", "User");
+
+            // Ensure the directory exists
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            var filePath = Path.Combine(folderPath, uniqueFileName);
+
+            // Save the file
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                img.CopyTo(stream);
+            }
+
+            // Return the relative path to the saved image
+            return "/Image/User/" + uniqueFileName;
+        }
+
 
         [HttpPost]
-        public async Task<IActionResult> SignUp(User u, IFormCollection f, IFormFile i)
+        public async Task<IActionResult> SignUp(User u, IFormCollection f, IFormFile img)
         {
             if (HttpContext.Session.GetString("Id") == null && HttpContext.Session.GetString("Type") == null)
             {
                 int wentWrong;
-                if (ConfUser(u, f, i, out wentWrong))
+                if (ConfUser(u, f, out wentWrong))
                 {
                     User newUser = new User();
 
@@ -141,7 +170,17 @@ namespace Online_Learning_Platform.Controllers
                         newUser.UserType = 2;
                     }
 
+                    if (img != null)
+                    {
+                        newUser.UserImage = SaveImage(img);
+                    }
+                    else 
+                    {
+                        newUser.UserImage = "/img/user.png";
+                    }
+
                     Console.WriteLine("data ok");
+
 
                     db.Users.Add(newUser);
                     await db.SaveChangesAsync();
@@ -285,15 +324,13 @@ namespace Online_Learning_Platform.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditData(User u, IFormCollection form)
+        public async Task<IActionResult> EditData(User u, IFormCollection form, IFormFile img)
         {
             if (HttpContext.Session.GetString("Id") == null || HttpContext.Session.GetString("Type") == null)
             {
                 return RedirectToAction("Index", "Home");
             }
 
-            if (HttpContext.Session.GetString("Type") == "user")
-            {
                 User? current = db.Users.Where(a => a.UserId.ToString() == HttpContext.Session.GetString("Id")).FirstOrDefault();
 
                 if (current != null)
@@ -347,77 +384,32 @@ namespace Online_Learning_Platform.Controllers
                     }
 
 
+                    //// Handle image upload
+
+                    if (img != null)
+                    {
+                        // Check if the image file exists before deleting
+                        if (System.IO.File.Exists(current.UserImage))
+                        {
+                            // Delete the old image file
+                            System.IO.File.Delete(current.UserImage);
+                        }
+                        current.UserImage = SaveImage(img);
+                    }
+
+
                     // update the user
+                    current.UserCourses = new List<UserCourse>();
+                    
                     db.Users.Update(current);
                     await db.SaveChangesAsync();
-                }
+                
 
 
                 return RedirectToAction("Profile");
             }
-            //else
-            //{
-            //    CourseProvider? current = db.CourseProviders.Where(a => a.CourseProviderId == HttpContext.Session.GetString("Id")).FirstOrDefault();
+            return RedirectToAction("Index", "Home");
 
-            //    if (current != null)
-            //    {
-            //        // update name
-            //        if (u.UserName != null && u.UserName != current.CourseProviderName)
-            //        {
-            //            current.CourseProviderName = u.UserName;
-            //        }
-
-            //        // update email
-            //        if (u.UserEmail != null && u.UserEmail != current.CourseProviderEmail)
-            //        {
-            //            CourseProvider? newu = db.CourseProviders.Where(a => a.CourseProviderEmail == u.UserEmail).FirstOrDefault();
-            //            if (newu == null)
-            //            {
-            //                current.CourseProviderEmail = u.UserEmail;
-            //            }
-            //            else
-            //            {
-            //                ModelState.AddModelError("UserEmail", "This Email Already Exist");
-            //                return View(u);
-            //            }
-            //        }
-
-            //        // update password
-            //        if (u.UserPassword != null && u.UserPassword != current.CourseProviderPassword)
-            //        {
-            //            int t;
-            //            if (!UserPassCheck(u, form["confpass"], out t))
-            //            {
-            //                if (t == 0)
-            //                {
-            //                    // the length of the password is wrong
-            //                    ModelState.AddModelError("UserPassword", "The Password Must be Between 8-12 char");
-            //                }
-            //                else if (t == 1)
-            //                {
-            //                    // the password doesn't come in the right format
-            //                }
-            //                else
-            //                {
-            //                    // the password confirm doesn't match the password
-            //                    ModelState.AddModelError("UserPassword", "The Passwords Don't Match");
-
-            //                }
-            //                return View(u);
-
-            //            }
-            //            current.CourseProviderPassword = u.UserPassword;
-            //        }
-
-
-            //        // update the user
-            //        db.CourseProviders.Update(current);
-            //        await db.SaveChangesAsync();
-               // }
-
-
-                return RedirectToAction("Profile", "CourseProvider");
-            //}
         }
 
         // go back to the user profile
@@ -461,6 +453,19 @@ namespace Online_Learning_Platform.Controllers
             }
             else if (HttpContext.Session.GetString("Type") == "user")
             {
+
+                var id = int.Parse(HttpContext.Session.GetString("Id"));
+                var courses = db.UserCourses
+                                        .Where(a => a.UserId == id)
+                                        .Include(c => c.Course)
+                                        .ToList();
+                foreach (var course in courses)
+                {
+                    var students = db.UserCourses
+                             .Where(a => a.CourseId == course.CourseId && a.UserId != id)
+                             .ToList();
+                }
+                ViewData["numCourses"] = courses.Count();
                 return View();
             }
             else
@@ -468,5 +473,35 @@ namespace Online_Learning_Platform.Controllers
                 return RedirectToAction("DashBoard", "CourseProvider");
             }
         }
+
+
+
+        /* a function to show the  courses booked by user
+         */
+        [HttpGet]
+        public IActionResult ViewMyCourses()
+        {
+            if (
+                HttpContext.Session.GetString("Id") == null
+                || HttpContext.Session.GetString("Type") == null
+                || HttpContext.Session.GetString("Type") != "user"
+                )
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var id = int.Parse(HttpContext.Session.GetString("Id"));
+
+            var myCourses = from Course in db.Courses
+                            join UserCourse in db.UserCourses
+                            on Course.CourseId equals UserCourse.CourseId
+                            where UserCourse.UserId == id
+                            select Course;
+
+            ViewData["courses"] = myCourses.ToList();
+            return View();
+        }
+
+
     }
 }
